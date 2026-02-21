@@ -1,0 +1,24 @@
+# Core scientific
+astropy
+numpy
+pandas
+scipy
+
+# Plotting
+bokeh
+
+# Google Sheets integration
+gspread
+google-auth
+
+# Code quality
+black
+black[jupyter]
+flake8
+pytest
+
+# Notebook support
+ipykernel
+
+# Document conversion
+pandoc
