@@ -29,6 +29,7 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ## Reference Documents
 - Dunitz MI, Lang JM, Jospin G, Darling AE, Eisen JA, Coil DA. 2015. Swabs to genomes: a comprehensive workflow. PeerJ 3:e960. https://doi.org/10.7717/peerj.960
 - Guillard RRL, Hargraves PE. 1993. Stichochrysis immobilis is a diatom, not a chrysophyte. Phycologia 32:234-236.
+- Kester DR, Duedall IW, Connors DN, Pytkowicz RM. 1967. Preparation of artificial seawater. Limnol Oceanogr 12:176-179.
 - Voutsinos MY, Banfield JF, McClelland HLO. 2025. Extensive and diverse lanthanide-dependent metabolism in the ocean. ISME J 19(1):wraf057.
 - Pol A et al. 2014. Rare earth metals are essential for methanotrophic life in volcanic mudpots. Environ Microbiol 16:255-264.
 - Oliva G et al. 2024. Development of broad-range microbial minimal culture medium for lanthanide studies. Microorganisms 12(8):1531.
@@ -37,7 +38,7 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 - Mattocks JA, Ho JV, Cotruvo JA. 2019. A selective, protein-based fluorescent sensor with picomolar affinity for rare earth elements. JACS 141:2857-2861.
 
 ## TODOs
-- [ ] Source natural seawater or select ASW recipe
+- [x] ~~Source natural seawater or select ASW recipe~~ → using Kester et al. 1967 ASW
 - [ ] Confirm LaCl₃·7H₂O in lab inventory
 - [ ] Make fresh vitamin stocks (previous stocks left unrefrigerated)
 - [ ] Decide on inoculum sources (coastal sites)
@@ -54,19 +55,80 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 
 #### Base: Standard L1 Medium (Guillard & Hargraves 1993)
 
-Per 1 L, begin with 950 mL filtered natural seawater (or ASW at ~35 ppt).
+Assembled from 5× ASW concentrates + L1 nutrient stocks + dH₂O.
 
-| Component | Stock Solution | Add to 1 L | Final Concentration |
-| :-- | :-- | :--: | :-- |
-| NaNO₃ | 75.00 g/L dH₂O (882 mM) | 1 mL | 8.82 × 10⁻⁴ M |
-| NaH₂PO₄·H₂O | 5.00 g/L dH₂O (36.2 mM) | 1 mL | 3.62 × 10⁻⁵ M |
-| Na₂SiO₃·9H₂O | 30.00 g/L dH₂O (106 mM) | 1 mL | 1.06 × 10⁻⁴ M |
-| L1 trace element solution | see below | 1 mL | --- |
-| f/2 vitamin solution | see below | 0.5 mL | --- |
+**Why ASW instead of natural seawater?** Natural seawater contains 3–30 pM dissolved La
+(and other REEs), which would confound the La=0 and La=10 pM conditions. Defined ASW
+ensures the zero-La controls are truly zero. Use ACS-grade or higher purity salts to
+minimize trace REE contamination.
 
-Bring to 1 L with filtered seawater. **Add 15 g/L agar for plates.** Autoclave (121°C, 15 min). Final pH 8.0–8.2.
+#### 5× Artificial Seawater Concentrates
 
-**Note on phosphate and La precipitation:** L1 contains 36.2 µM phosphate, which will precipitate some La³⁺ as insoluble LaPO₄. At 10 µM La and pH 8, expect partial loss. A white haze in La=10µM plates is normal. The 10 pM and 10 nM conditions are below the precipitation threshold and remain fully soluble.
+Prepare Solutions 1 and 2 **separately** — Ca²⁺ (Soln 2) precipitates as CaSO₄/CaCO₃
+if mixed with sulfate/bicarbonate (Soln 1) at 5× concentration. They are combined only
+at the time of final medium assembly (diluted to 1×).
+
+**Solution 1 — Anions + monovalent cations (5× concentrate, 500 mL)**
+
+Use a funnel for adding salts. Dissolve NaCl and Na₂SO₄ directly in bottle. Dissolve
+remaining salts individually in 30 mL dH₂O each, then add to bottle. Bring to 500 mL.
+Shake well. Autoclave.
+
+| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 500 mL of 5× (g) |
+| :-- | :--: | :--: | :--: | :--: |
+| NaCl | 58.44 | 21.19 | 105.95 | 52.98 |
+| Na₂SO₄ | 142.04 | 3.550 | 17.75 | 8.875 |
+| KCl | 74.55 | 0.599 | 2.995 | 1.498 |
+| KBr | 119.00 | 0.0862 | 0.431 | 0.216 |
+| H₃BO₃ | 61.83 | 0.0229 | 0.1145 | 0.057 |
+| NaF | 41.99 | 0.00275 | 0.01375 | 0.007 |
+| NaHCO₃ | 84.01 | 0.1735 | 0.8675 | 0.434 |
+
+**Solution 2 — Divalent cations (5× concentrate, 500 mL)**
+
+Dissolve MgCl₂·6H₂O and CaCl₂·2H₂O directly in bottle. Add SrCl₂·6H₂O.
+Bring to 500 mL. Shake well. Autoclave.
+
+| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 500 mL of 5× (g) |
+| :-- | :--: | :--: | :--: | :--: |
+| MgCl₂·6H₂O | 203.30 | 9.592 | 47.96 | 23.98 |
+| CaCl₂·2H₂O | 147.01 | 1.344 | 6.72 | 3.36 |
+| SrCl₂·6H₂O | 266.62 | 0.0219 | 0.1095 | 0.055 |
+
+**Shelf life:** 5× concentrates are stable at room temperature for months. Check for
+precipitate before use — if cloudy, discard and remake.
+
+**Scale for this protocol:** 2 L of L1 needs 200 mL of each 5× solution. 500 mL prep
+gives excess for future use.
+
+#### L1 Medium Assembly (per 1 L)
+
+| Component | Volume | Notes |
+| :-- | :--: | :-- |
+| 5× ASW Solution 1 | 100 mL | Anions + monovalent cations |
+| 5× ASW Solution 2 | 100 mL | Divalent cations |
+| NaNO₃ stock | 1 mL | 75.00 g/L dH₂O (882 mM) → 8.82 × 10⁻⁴ M final |
+| NaH₂PO₄·H₂O stock | 1 mL | 5.00 g/L dH₂O (36.2 mM) → 3.62 × 10⁻⁵ M final |
+| Na₂SiO₃·9H₂O stock | 1 mL | 30.00 g/L dH₂O (106 mM) → 1.06 × 10⁻⁴ M final |
+| L1 trace element solution | 1 mL | see below |
+| f/2 vitamin solution | 0.5 mL | see below |
+| dH₂O | to 1 L | ~795.5 mL |
+| Agar (for plates) | 15 g | Add before autoclaving |
+
+Combine ASW solutions and dH₂O first, then add nutrient stocks. Add agar.
+Autoclave (121°C, 15 min). Final pH 8.0–8.2.
+
+**For 2 L (this protocol):** double all volumes (200 mL each ASW solution, 2 mL each
+nutrient stock, 1 mL vitamins, 30 g agar, ~1591 mL dH₂O).
+
+**Note on Ca²⁺:** Final Ca²⁺ is ~9.1 mM (from CaCl₂·2H₂O), which competes with La³⁺
+for carboxyl binding sites on cell surfaces. This is the realistic marine condition. For
+higher La bioavailability in future experiments, Ca²⁺ can be reduced (see Oliva et al. 2024).
+
+**Note on phosphate and La precipitation:** L1 contains 36.2 µM phosphate, which will
+precipitate some La³⁺ as insoluble LaPO₄. At 10 µM La and pH 8, expect partial loss.
+A white haze in La=10µM plates is normal. The 10 pM and 10 nM conditions are below the
+precipitation threshold and remain fully soluble.
 
 #### L1 Trace Element Solution
 
@@ -203,6 +265,16 @@ Add to agar cooled to ~50°C. Pour immediately.
 | Methanol | CH₃OH | 32.04 | Flammable, toxic; flash pt 11°C | Gloves, goggles, fume hood | Organic solvent waste | Flammables cabinet |
 | Hydrochloric acid (1 M) | HCl | 36.46 | Corrosive | Gloves, goggles | Acid waste | |
 | Agar (bacteriological) | — | — | None | Standard | Autoclave waste | |
+| Sodium chloride | NaCl | 58.44 | None | Standard | Drain | |
+| Sodium sulfate | Na₂SO₄ | 142.04 | None | Standard | Drain | |
+| Potassium chloride | KCl | 74.55 | None | Standard | Drain | |
+| Sodium bicarbonate | NaHCO₃ | 84.01 | None | Standard | Drain | |
+| Potassium bromide | KBr | 119.00 | None | Standard | Drain | |
+| Boric acid | H₃BO₃ | 61.83 | Reproductive toxin at high dose | Gloves | Drain (dilute) | |
+| Sodium fluoride | NaF | 41.99 | Toxic if ingested | Gloves, goggles | Chemical waste | |
+| Magnesium chloride hexahydrate | MgCl₂·6H₂O | 203.30 | Irritant | Gloves | Drain | |
+| Calcium chloride dihydrate | CaCl₂·2H₂O | 147.01 | Irritant; exothermic on dissolving | Gloves | Drain | |
+| Strontium chloride hexahydrate | SrCl₂·6H₂O | 266.62 | Irritant | Gloves | Chemical waste | |
 
 ## Culture Conditions
 - **Temperature:** Match source water (15–20°C)
@@ -290,7 +362,7 @@ Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
 
 | Week | Activity |
 | :--: | :-- |
-| -1 | Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave agar base. |
+| -1 | Prepare ASW (1 L batch). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave agar base. |
 | 0 | Collect inoculum. Pour 72 plates. Inoculate. |
 | 1–2 | Daily plate checks. Photograph day 3, 7, 14. |
 | 2–4 | Pick colonies, streak for isolation, 16S PCR. |
