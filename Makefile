@@ -5,13 +5,15 @@ INPUT_FILE ?= "default_batch"
 OUTPUT_DIRECTORY_PATH ?= "./pdfs"
 
 # Convert file to pdf
+# Uses Arial Unicode MS for unicode support (subscripts, special chars)
+# Disables strikeout extension to avoid soul.sty dependency on BasicTeX (Pandoc 3.0+)
 .PHONY: md-to-pdf
 md-to-pdf:
 	@echo "Input file: $(INPUT_FILE)"
 	$(eval BASE_NAME := $(basename $(notdir $(INPUT_FILE))))
 	$(eval OUTPUT_FILE := $(OUTPUT_DIRECTORY_PATH)/$(BASE_NAME).pdf)
 	@echo "Output file path: $(OUTPUT_FILE)"
-	pandoc -V geometry:margin=1in --from=gfm -t pdf "$(INPUT_FILE)" -o "$(OUTPUT_FILE)" --pdf-engine=/Library/TeX/texbin/xelatex
+	pandoc -V geometry:margin=1in -V mainfont="Arial Unicode MS" --from=gfm-strikeout -t pdf "$(INPUT_FILE)" -o "$(OUTPUT_FILE)" --pdf-engine=/Library/TeX/texbin/xelatex
 
 # E501 is line too long
 .PHONY: fmt
