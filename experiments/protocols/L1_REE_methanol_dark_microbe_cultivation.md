@@ -145,7 +145,7 @@ To 950 mL dH₂O, add components **in this order:**
 
 #### f/2 Vitamin Solution — MAKE FRESH
 
-⚠️ Previous stocks were removed from refrigeration and are likely degraded (especially thiamine). Prepare new from powder.
+WARNING: Previous stocks were removed from refrigeration and are likely degraded (especially thiamine). Prepare new from powder.
 
 Biotin primary stock: 0.1 g/L dH₂O (0.409 mM). B₁₂ primary stock: 1.0 g/L dH₂O (0.738 mM, wrap in foil).
 
