@@ -58,9 +58,9 @@ Per 1 L, begin with 950 mL filtered natural seawater (or ASW at ~35 ppt).
 
 | Component | Stock Solution | Add to 1 L | Final Concentration |
 | :-- | :-- | :--: | :-- |
-| NaNO₃ | 75.00 g/L dH₂O | 1 mL | 8.82 × 10⁻⁴ M |
-| NaH₂PO₄·H₂O | 5.00 g/L dH₂O | 1 mL | 3.62 × 10⁻⁵ M |
-| Na₂SiO₃·9H₂O | 30.00 g/L dH₂O | 1 mL | 1.06 × 10⁻⁴ M |
+| NaNO₃ | 75.00 g/L dH₂O (882 mM) | 1 mL | 8.82 × 10⁻⁴ M |
+| NaH₂PO₄·H₂O | 5.00 g/L dH₂O (36.2 mM) | 1 mL | 3.62 × 10⁻⁵ M |
+| Na₂SiO₃·9H₂O | 30.00 g/L dH₂O (106 mM) | 1 mL | 1.06 × 10⁻⁴ M |
 | L1 trace element solution | see below | 1 mL | --- |
 | f/2 vitamin solution | see below | 0.5 mL | --- |
 
@@ -81,15 +81,15 @@ To 950 mL dH₂O, add components **in this order:**
 | :-- | :-- | :--: | :-- |
 | Na₂EDTA·2H₂O | --- | 4.36 g | 1.17 × 10⁻⁵ M |
 | FeCl₃·6H₂O | --- | 3.15 g | 1.17 × 10⁻⁵ M |
-| MnCl₂·4H₂O | 178.10 g/L dH₂O | 1 mL | 9.00 × 10⁻⁷ M |
-| ZnSO₄·7H₂O | 23.00 g/L dH₂O | 1 mL | 8.00 × 10⁻⁸ M |
-| CoCl₂·6H₂O | 11.90 g/L dH₂O | 1 mL | 5.00 × 10⁻⁸ M |
-| CuSO₄·5H₂O | 2.50 g/L dH₂O | 1 mL | 1.00 × 10⁻⁸ M |
-| Na₂MoO₄·2H₂O | 19.9 g/L dH₂O | 1 mL | 8.22 × 10⁻⁸ M |
-| H₂SeO₃ | 1.29 g/L dH₂O | 1 mL | 1.00 × 10⁻⁸ M |
-| NiSO₄·6H₂O | 2.63 g/L dH₂O | 1 mL | 1.00 × 10⁻⁸ M |
-| Na₃VO₄ | 1.84 g/L dH₂O | 1 mL | 1.00 × 10⁻⁸ M |
-| K₂CrO₄ | 1.94 g/L dH₂O | 1 mL | 1.00 × 10⁻⁸ M |
+| MnCl₂·4H₂O | 178.10 g/L dH₂O (900 mM) | 1 mL | 9.00 × 10⁻⁷ M |
+| ZnSO₄·7H₂O | 23.00 g/L dH₂O (80.0 mM) | 1 mL | 8.00 × 10⁻⁸ M |
+| CoCl₂·6H₂O | 11.90 g/L dH₂O (50.0 mM) | 1 mL | 5.00 × 10⁻⁸ M |
+| CuSO₄·5H₂O | 2.50 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
+| Na₂MoO₄·2H₂O | 19.9 g/L dH₂O (82.2 mM) | 1 mL | 8.22 × 10⁻⁸ M |
+| H₂SeO₃ | 1.29 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
+| NiSO₄·6H₂O | 2.63 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
+| Na₃VO₄ | 1.84 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
+| K₂CrO₄ | 1.94 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
 
 5. Bring to 1 L. Autoclave. Store at 4°C.
 
@@ -97,7 +97,7 @@ To 950 mL dH₂O, add components **in this order:**
 
 ⚠️ Previous stocks were removed from refrigeration and are likely degraded (especially thiamine). Prepare new from powder.
 
-Biotin primary stock: 0.1 g/L dH₂O. B₁₂ primary stock: 1.0 g/L dH₂O (wrap in foil).
+Biotin primary stock: 0.1 g/L dH₂O (0.409 mM). B₁₂ primary stock: 1.0 g/L dH₂O (0.738 mM, wrap in foil).
 
 1. Begin with 950 mL dH₂O
 2. Dissolve 200 mg thiamine·HCl directly
@@ -107,9 +107,9 @@ Biotin primary stock: 0.1 g/L dH₂O. B₁₂ primary stock: 1.0 g/L dH₂O (wra
 
 | Component | Primary Stock | Quantity | Final Conc. in Medium |
 | :-- | :-- | :--: | :-- |
-| Thiamine·HCl (B₁) | --- | 200 mg | 2.96 × 10⁻⁷ M |
-| Biotin (H) | 0.1 g/L dH₂O | 10 mL | 2.05 × 10⁻⁹ M |
-| Cyanocobalamin (B₁₂) | 1.0 g/L dH₂O | 1 mL | 3.69 × 10⁻¹⁰ M |
+| Thiamine·HCl (B₁) | --- (200 mg/L = 0.593 mM) | 200 mg | 2.96 × 10⁻⁷ M |
+| Biotin (H) | 0.1 g/L dH₂O (0.409 mM) | 10 mL | 2.05 × 10⁻⁹ M |
+| Cyanocobalamin (B₁₂) | 1.0 g/L dH₂O (0.738 mM) | 1 mL | 3.69 × 10⁻¹⁰ M |
 
 #### Lanthanum Stock Solutions — FILTER-STERILIZE, DO NOT AUTOCLAVE
 
