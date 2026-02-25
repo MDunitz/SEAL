@@ -98,7 +98,7 @@ Bring to 1 L. Shake well. Autoclave.
 **Shelf life:** 5× concentrates are stable at room temperature for months. Check for
 precipitate before use — if cloudy, discard and remake.
 
-**Scale for this protocol:** 6.5 L total L1 base (3.5 L agar + 3 L liquid) needs 650 mL
+**Scale for this protocol:** 7 L total L1 base (4 L agar + 3 L liquid) needs 700 mL
 of each 5× solution. 1 L prep gives excess for future use.
 
 #### L1 Medium Assembly (per 1 L)
@@ -118,9 +118,9 @@ of each 5× solution. 1 L prep gives excess for future use.
 Combine ASW solutions and dH₂O first, then add nutrient stocks. Add agar.
 Autoclave (121°C, 15 min). Final pH 8.0–8.2.
 
-**For 6.5 L (this protocol):** multiply all volumes by 6.5 (650 mL each ASW solution,
-6.5 mL each nutrient stock, 3.25 mL vitamins, dH₂O to volume). Split before autoclaving:
-- **3.5 L portion** → add 52.5 g agar → autoclave → plates
+**For 7 L (this protocol):** multiply all volumes by 7 (700 mL each ASW solution,
+7 mL each nutrient stock, 3.5 mL vitamins, dH₂O to volume). Split before autoclaving:
+- **4 L portion** → add 60 g agar → autoclave → plates
 - **3.0 L portion** → no agar → autoclave → liquid media
 
 **Note on Ca²⁺:** Final Ca²⁺ is ~9.1 mM (from CaCl₂·2H₂O), which competes with La³⁺
@@ -221,7 +221,7 @@ Add to agar cooled to ~50°C. Pour immediately.
 | **La = 10 µM** | 10 | 11 | 12 |
 
 10 plates per condition × 12 conditions = **120 plates**.
-Prepare **3.5 L** L1 agar base (120 × 25 mL = 3.0 L + margin).
+Prepare **4 L** L1 agar base (120 × 25 mL = 3.0 L; extra left on bench).
 
 #### Liquid Media
 
@@ -316,7 +316,7 @@ Optional positive control: M. extorquens AM1 (ATCC 14718)
 
 ### Protocol
 
-1. Autoclave 3.5 L L1 agar base. Cool to 50°C.
+1. Autoclave 4 L L1 agar base. Cool to 50°C.
 2. Dispense 12 batches × 275 mL. Add La and MeOH per batch table.
 
 **Batch table (275 mL each = 10 plates + dead volume):**
@@ -397,7 +397,7 @@ Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
 
 | Week | Activity |
 | :--: | :-- |
-| -1 | Prepare 5× ASW (1 L each solution). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave 3.5 L agar base + 3 L liquid base. |
+| -1 | Prepare 5× ASW (1 L each solution). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave 4 L agar base + 3 L liquid base. |
 | 0 | Pour 120 plates. Dispense 12 × 250 mL liquid aliquots. Add La/MeOH to all. Collect inoculum. Inoculate. |
 | 1–2 | Daily plate checks. Photograph day 3, 7, 14. |
 | 2–4 | Pick colonies, streak for isolation, 16S PCR. |
