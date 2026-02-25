@@ -98,8 +98,8 @@ Bring to 500 mL. Shake well. Autoclave.
 **Shelf life:** 5× concentrates are stable at room temperature for months. Check for
 precipitate before use — if cloudy, discard and remake.
 
-**Scale for this protocol:** 2 L of L1 needs 200 mL of each 5× solution. 500 mL prep
-gives excess for future use.
+**Scale for this protocol:** 3.5 L of L1 needs 350 mL of each 5× solution. 500 mL prep
+gives some excess for future use.
 
 #### L1 Medium Assembly (per 1 L)
 
@@ -118,8 +118,8 @@ gives excess for future use.
 Combine ASW solutions and dH₂O first, then add nutrient stocks. Add agar.
 Autoclave (121°C, 15 min). Final pH 8.0–8.2.
 
-**For 2 L (this protocol):** double all volumes (200 mL each ASW solution, 2 mL each
-nutrient stock, 1 mL vitamins, 30 g agar, ~1591 mL dH₂O).
+**For 3.5 L (this protocol):** multiply all volumes by 3.5 (350 mL each ASW solution,
+3.5 mL each nutrient stock, 1.75 mL vitamins, 52.5 g agar, ~2784 mL dH₂O).
 
 **Note on Ca²⁺:** Final Ca²⁺ is ~9.1 mM (from CaCl₂·2H₂O), which competes with La³⁺
 for carboxyl binding sites on cell surfaces. This is the realistic marine condition. For
@@ -218,7 +218,8 @@ Add to agar cooled to ~50°C. Pour immediately.
 | **La = 10 nM** | 7 | 8 | 9 |
 | **La = 10 µM** | 10 | 11 | 12 |
 
-3 reps × 12 conditions × 2 dilutions = **72 plates**. Prepare **2 L** L1 agar base.
+10 plates per condition × 12 conditions = **120 plates**.
+Prepare **3.5 L** L1 agar base (120 × 25 mL = 3.0 L + margin).
 
 ### Organisms
 
@@ -230,14 +231,14 @@ Add to agar cooled to ~50°C. Pour immediately.
 
 | **Item** |**Count** | **Located In Lab** | **Ordering Information** |
 | :--: | :--: |:--: |:--:|
-| Polystyrene petri dishes (100 mm) | 80 | | 72 + spares |
+| Polystyrene petri dishes (100 mm) | 130 | | 120 + spares |
 | 0.2 µm syringe filters | 6 | | La and MeOH stocks |
 | 10 mL syringes | 6 | | |
 | Polypropylene tubes (15 mL) | 10 | | La stock — NOT glass |
 | Polypropylene tubes (50 mL) | 4 | | Serial dilutions |
 | Parafilm | 1 roll | | |
 | Ziplock bags (gallon) | 12 | | Bag by condition |
-| Sterile spreaders or glass beads | 80 | | |
+| Sterile spreaders or glass beads | 130 | | |
 
 ### Reusables
 
@@ -307,25 +308,25 @@ Optional positive control: M. extorquens AM1 (ATCC 14718)
 
 ### Protocol
 
-1. Autoclave 2 L L1 agar base. Cool to 50°C.
-2. Dispense 12 batches × 150 mL. Add La and MeOH per batch table.
+1. Autoclave 3.5 L L1 agar base. Cool to 50°C.
+2. Dispense 12 batches × 275 mL. Add La and MeOH per batch table.
 
-**Batch table (150 mL each, 6 plates per batch):**
+**Batch table (275 mL each = 10 plates + dead volume):**
 
 | Batch | Condition | La stock | La vol | MeOH stock | MeOH vol |
 | :--: | :-- | :-- | :--: | :-- | :--: |
-| 1 | La=0, MeOH=0 | pH 3 dH₂O | 150 µL | dH₂O | 150 µL |
-| 2 | La=0, MeOH=1mM | pH 3 dH₂O | 150 µL | 1 M MeOH | 150 µL |
-| 3 | La=0, MeOH=100mM | pH 3 dH₂O | 150 µL | Neat MeOH | 608 µL |
-| 4 | La=10pM, MeOH=0 | La-3 (10 nM) | 150 µL | dH₂O | 150 µL |
-| 5 | La=10pM, MeOH=1mM | La-3 (10 nM) | 150 µL | 1 M MeOH | 150 µL |
-| 6 | La=10pM, MeOH=100mM | La-3 (10 nM) | 150 µL | Neat MeOH | 608 µL |
-| 7 | La=10nM, MeOH=0 | La-2 (10 µM) | 150 µL | dH₂O | 150 µL |
-| 8 | La=10nM, MeOH=1mM | La-2 (10 µM) | 150 µL | 1 M MeOH | 150 µL |
-| 9 | La=10nM, MeOH=100mM | La-2 (10 µM) | 150 µL | Neat MeOH | 608 µL |
-| 10 | La=10µM, MeOH=0 | La-1 (10 mM) | 150 µL | dH₂O | 150 µL |
-| 11 | La=10µM, MeOH=1mM | La-1 (10 mM) | 150 µL | 1 M MeOH | 150 µL |
-| 12 | La=10µM, MeOH=100mM | La-1 (10 mM) | 150 µL | Neat MeOH | 608 µL |
+| 1 | La=0, MeOH=0 | pH 3 dH₂O | 275 µL | dH₂O | 275 µL |
+| 2 | La=0, MeOH=1mM | pH 3 dH₂O | 275 µL | 1 M MeOH | 275 µL |
+| 3 | La=0, MeOH=100mM | pH 3 dH₂O | 275 µL | Neat MeOH | 1.11 mL |
+| 4 | La=10pM, MeOH=0 | La-3 (10 nM) | 275 µL | dH₂O | 275 µL |
+| 5 | La=10pM, MeOH=1mM | La-3 (10 nM) | 275 µL | 1 M MeOH | 275 µL |
+| 6 | La=10pM, MeOH=100mM | La-3 (10 nM) | 275 µL | Neat MeOH | 1.11 mL |
+| 7 | La=10nM, MeOH=0 | La-2 (10 µM) | 275 µL | dH₂O | 275 µL |
+| 8 | La=10nM, MeOH=1mM | La-2 (10 µM) | 275 µL | 1 M MeOH | 275 µL |
+| 9 | La=10nM, MeOH=100mM | La-2 (10 µM) | 275 µL | Neat MeOH | 1.11 mL |
+| 10 | La=10µM, MeOH=0 | La-1 (10 mM) | 275 µL | dH₂O | 275 µL |
+| 11 | La=10µM, MeOH=1mM | La-1 (10 mM) | 275 µL | 1 M MeOH | 275 µL |
+| 12 | La=10µM, MeOH=100mM | La-1 (10 mM) | 275 µL | Neat MeOH | 1.11 mL |
 
 3. **Pour in order:** MeOH=0 batches first (1,4,7,10), then MeOH=1mM (2,5,8,11), then MeOH=100mM (3,6,9,12). Prevents vapor cross-contamination.
 4. Parafilm each plate immediately. Bag by condition.
@@ -362,8 +363,8 @@ Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
 
 | Week | Activity |
 | :--: | :-- |
-| -1 | Prepare ASW (1 L batch). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave agar base. |
-| 0 | Collect inoculum. Pour 72 plates. Inoculate. |
+| -1 | Prepare 5× ASW (500 mL each solution). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave 3.5 L agar base. |
+| 0 | Collect inoculum. Pour 120 plates. Inoculate. |
 | 1–2 | Daily plate checks. Photograph day 3, 7, 14. |
 | 2–4 | Pick colonies, streak for isolation, 16S PCR. |
 | 4–8 | Extended incubation (2×/week). Additional picks. |
