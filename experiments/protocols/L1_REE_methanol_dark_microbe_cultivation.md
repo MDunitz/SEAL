@@ -68,38 +68,38 @@ Prepare Solutions 1 and 2 **separately** — Ca²⁺ (Soln 2) precipitates as Ca
 if mixed with sulfate/bicarbonate (Soln 1) at 5× concentration. They are combined only
 at the time of final medium assembly (diluted to 1×).
 
-**Solution 1 — Anions + monovalent cations (5× concentrate, 500 mL)**
+**Solution 1 — Anions + monovalent cations (5× concentrate, 1 L)**
 
 Use a funnel for adding salts. Dissolve NaCl and Na₂SO₄ directly in bottle. Dissolve
-remaining salts individually in 30 mL dH₂O each, then add to bottle. Bring to 500 mL.
+remaining salts individually in 30 mL dH₂O each, then add to bottle. Bring to 1 L.
 Shake well. Autoclave.
 
-| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 500 mL of 5× (g) |
+| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 1 L of 5× (g) |
 | :-- | :--: | :--: | :--: | :--: |
-| NaCl | 58.44 | 21.19 | 105.95 | 52.98 |
-| Na₂SO₄ | 142.04 | 3.550 | 17.75 | 8.875 |
-| KCl | 74.55 | 0.599 | 2.995 | 1.498 |
-| KBr | 119.00 | 0.0862 | 0.431 | 0.216 |
-| H₃BO₃ | 61.83 | 0.0229 | 0.1145 | 0.057 |
-| NaF | 41.99 | 0.00275 | 0.01375 | 0.007 |
-| NaHCO₃ | 84.01 | 0.1735 | 0.8675 | 0.434 |
+| NaCl | 58.44 | 21.19 | 105.95 | 105.95 |
+| Na₂SO₄ | 142.04 | 3.550 | 17.75 | 17.75 |
+| KCl | 74.55 | 0.599 | 2.995 | 2.995 |
+| KBr | 119.00 | 0.0862 | 0.431 | 0.431 |
+| H₃BO₃ | 61.83 | 0.0229 | 0.1145 | 0.1145 |
+| NaF | 41.99 | 0.00275 | 0.01375 | 0.01375 |
+| NaHCO₃ | 84.01 | 0.1735 | 0.8675 | 0.8675 |
 
-**Solution 2 — Divalent cations (5× concentrate, 500 mL)**
+**Solution 2 — Divalent cations (5× concentrate, 1 L)**
 
 Dissolve MgCl₂·6H₂O and CaCl₂·2H₂O directly in bottle. Add SrCl₂·6H₂O.
-Bring to 500 mL. Shake well. Autoclave.
+Bring to 1 L. Shake well. Autoclave.
 
-| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 500 mL of 5× (g) |
+| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 1 L of 5× (g) |
 | :-- | :--: | :--: | :--: | :--: |
-| MgCl₂·6H₂O | 203.30 | 9.592 | 47.96 | 23.98 |
-| CaCl₂·2H₂O | 147.01 | 1.344 | 6.72 | 3.36 |
-| SrCl₂·6H₂O | 266.62 | 0.0219 | 0.1095 | 0.055 |
+| MgCl₂·6H₂O | 203.30 | 9.592 | 47.96 | 47.96 |
+| CaCl₂·2H₂O | 147.01 | 1.344 | 6.72 | 6.72 |
+| SrCl₂·6H₂O | 266.62 | 0.0219 | 0.1095 | 0.1095 |
 
 **Shelf life:** 5× concentrates are stable at room temperature for months. Check for
 precipitate before use — if cloudy, discard and remake.
 
-**Scale for this protocol:** 3.5 L of L1 needs 350 mL of each 5× solution. 500 mL prep
-gives some excess for future use.
+**Scale for this protocol:** 6.5 L total L1 base (3.5 L agar + 3 L liquid) needs 650 mL
+of each 5× solution. 1 L prep gives excess for future use.
 
 #### L1 Medium Assembly (per 1 L)
 
@@ -118,8 +118,10 @@ gives some excess for future use.
 Combine ASW solutions and dH₂O first, then add nutrient stocks. Add agar.
 Autoclave (121°C, 15 min). Final pH 8.0–8.2.
 
-**For 3.5 L (this protocol):** multiply all volumes by 3.5 (350 mL each ASW solution,
-3.5 mL each nutrient stock, 1.75 mL vitamins, 52.5 g agar, ~2784 mL dH₂O).
+**For 6.5 L (this protocol):** multiply all volumes by 6.5 (650 mL each ASW solution,
+6.5 mL each nutrient stock, 3.25 mL vitamins, dH₂O to volume). Split before autoclaving:
+- **3.5 L portion** → add 52.5 g agar → autoclave → plates
+- **3.0 L portion** → no agar → autoclave → liquid media
 
 **Note on Ca²⁺:** Final Ca²⁺ is ~9.1 mM (from CaCl₂·2H₂O), which competes with La³⁺
 for carboxyl binding sites on cell surfaces. This is the realistic marine condition. For
@@ -221,6 +223,11 @@ Add to agar cooled to ~50°C. Pour immediately.
 10 plates per condition × 12 conditions = **120 plates**.
 Prepare **3.5 L** L1 agar base (120 × 25 mL = 3.0 L + margin).
 
+#### Liquid Media
+
+~250 mL per condition × 12 conditions = **3 L** liquid L1 (no agar).
+Dispense into twelve 250 mL aliquots post-autoclave, add La and MeOH to each.
+
 ### Organisms
 
 |**Organism**| **Strain** | **Provenance** | **Shorthand** | **Location** |
@@ -232,19 +239,20 @@ Prepare **3.5 L** L1 agar base (120 × 25 mL = 3.0 L + margin).
 | **Item** |**Count** | **Located In Lab** | **Ordering Information** |
 | :--: | :--: |:--: |:--:|
 | Polystyrene petri dishes (100 mm) | 130 | | 120 + spares |
+| Sterile bottles (250–500 mL, PP or glass) | 12 | | Liquid media aliquots, 1 per condition |
 | 0.2 µm syringe filters | 6 | | La and MeOH stocks |
 | 10 mL syringes | 6 | | |
 | Polypropylene tubes (15 mL) | 10 | | La stock — NOT glass |
 | Polypropylene tubes (50 mL) | 4 | | Serial dilutions |
 | Parafilm | 1 roll | | |
 | Ziplock bags (gallon) | 12 | | Bag by condition |
-| Sterile spreaders or glass beads | 130 | | |
+| Sterile inoculation loops | 1 box | | For streaking plates |
 
 ### Reusables
 
 | **Item** | **Count** | **Located In Lab** | **Cleaning Notes** |
 | :--: | :--: | :--: |:--:|
-| (none for plates-only protocol) | | | |
+| Autoclavable bottles/carboys (4 L) | 2 | | For autoclaving agar and liquid base batches |
 
 ### Equipment
 
@@ -330,11 +338,37 @@ Optional positive control: M. extorquens AM1 (ATCC 14718)
 
 3. **Pour in order:** MeOH=0 batches first (1,4,7,10), then MeOH=1mM (2,5,8,11), then MeOH=100mM (3,6,9,12). Prevents vapor cross-contamination.
 4. Parafilm each plate immediately. Bag by condition.
-5. Inoculate: 100 µL per plate. Use sterile spreaders/beads.
+5. Inoculate: 100 µL per plate.
 6. Incubate inverted. **MeOH-free bags separate from MeOH bags.**
 7. For MeOH bags: include open tube of 0.5% MeOH to maintain vapor pressure.
 8. Observe per schedule below. Photograph with ruler at each timepoint.
 9. Pick morphologically distinct colonies — prioritize taxa unique to La+ and/or MeOH+ plates.
+
+#### Liquid Media Preparation
+
+10. Autoclave 3 L L1 liquid base (no agar). Cool to room temperature.
+11. Dispense into 12 × 250 mL aliquots in sterile bottles or polypropylene flasks.
+12. Add La and MeOH per liquid batch table.
+
+**Liquid batch table (250 mL each):**
+
+| Batch | Condition | La stock | La vol | MeOH stock | MeOH vol |
+| :--: | :-- | :-- | :--: | :-- | :--: |
+| 1 | La=0, MeOH=0 | pH 3 dH₂O | 250 µL | dH₂O | 250 µL |
+| 2 | La=0, MeOH=1mM | pH 3 dH₂O | 250 µL | 1 M MeOH | 250 µL |
+| 3 | La=0, MeOH=100mM | pH 3 dH₂O | 250 µL | Neat MeOH | 1.01 mL |
+| 4 | La=10pM, MeOH=0 | La-3 (10 nM) | 250 µL | dH₂O | 250 µL |
+| 5 | La=10pM, MeOH=1mM | La-3 (10 nM) | 250 µL | 1 M MeOH | 250 µL |
+| 6 | La=10pM, MeOH=100mM | La-3 (10 nM) | 250 µL | Neat MeOH | 1.01 mL |
+| 7 | La=10nM, MeOH=0 | La-2 (10 µM) | 250 µL | dH₂O | 250 µL |
+| 8 | La=10nM, MeOH=1mM | La-2 (10 µM) | 250 µL | 1 M MeOH | 250 µL |
+| 9 | La=10nM, MeOH=100mM | La-2 (10 µM) | 250 µL | Neat MeOH | 1.01 mL |
+| 10 | La=10µM, MeOH=0 | La-1 (10 mM) | 250 µL | dH₂O | 250 µL |
+| 11 | La=10µM, MeOH=1mM | La-1 (10 mM) | 250 µL | 1 M MeOH | 250 µL |
+| 12 | La=10µM, MeOH=100mM | La-1 (10 mM) | 250 µL | Neat MeOH | 1.01 mL |
+
+13. Cap and store at 4°C (or room temp) until inoculation.
+14. Sub-aliquot from each 250 mL bottle into individual culture vessels as needed.
 
 ### Colony Picking & 16S → Genome Workflow
 Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
@@ -363,8 +397,8 @@ Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
 
 | Week | Activity |
 | :--: | :-- |
-| -1 | Prepare 5× ASW (500 mL each solution). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave 3.5 L agar base. |
-| 0 | Collect inoculum. Pour 120 plates. Inoculate. |
+| -1 | Prepare 5× ASW (1 L each solution). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave 3.5 L agar base + 3 L liquid base. |
+| 0 | Pour 120 plates. Dispense 12 × 250 mL liquid aliquots. Add La/MeOH to all. Collect inoculum. Inoculate. |
 | 1–2 | Daily plate checks. Photograph day 3, 7, 14. |
 | 2–4 | Pick colonies, streak for isolation, 16S PCR. |
 | 4–8 | Extended incubation (2×/week). Additional picks. |
