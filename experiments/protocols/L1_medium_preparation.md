@@ -21,7 +21,7 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 
 ## Prerequisites
 
-- Artificial seawater (ASW) at ~35 ppt -- see `ASW_kester_1967.md`
+- Artificial seawater (ASW) at ~31 ppt -- see `ASW_kester_1967.md`
 
 ## References
 
