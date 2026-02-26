@@ -84,16 +84,22 @@ Shake well. Autoclave.
 | NaF | 41.99 | 0.00275 | 0.01375 | 0.01375 |
 | NaHCO₃ | 84.01 | 0.1735 | 0.8675 | 0.8675 |
 
-**Solution 2 — Divalent cations (5× concentrate, 1 L)**
+**Solution 2 — Divalent cations + L1 nutrient stocks (5× concentrate, 1 L)**
 
 Dissolve MgCl₂·6H₂O and CaCl₂·2H₂O directly in bottle. Add SrCl₂·6H₂O.
-Bring to 1 L. Shake well. Autoclave.
+Then add L1 nutrient stocks at 5× volumes. Bring to 1 L. Shake well. Autoclave.
 
 | Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 1 L of 5× (g) |
 | :-- | :--: | :--: | :--: | :--: |
 | MgCl₂·6H₂O | 203.30 | 9.592 | 47.96 | 47.96 |
 | CaCl₂·2H₂O | 147.01 | 1.344 | 6.72 | 6.72 |
 | SrCl₂·6H₂O | 266.62 | 0.0219 | 0.1095 | 0.1095 |
+
+| L1 nutrient stock | Stock conc. | 1× vol/L | 5× vol/L | For 1 L of 5× (mL) |
+| :-- | :-- | :--: | :--: | :--: |
+| NaNO₃ | 75.00 g/L dH₂O (882 mM) | 1 mL | 5 mL | 5 |
+| NaH₂PO₄·H₂O | 5.00 g/L dH₂O (36.2 mM) | 1 mL | 5 mL | 5 |
+| Na₂SiO₃·9H₂O | 30.00 g/L dH₂O (106 mM) | 1 mL | 5 mL | 5 (optional — only needed for diatoms/siliceous phytoplankton; not required for bacterial targets but included to match standard L1) |
 
 **Shelf life:** 5× concentrates are stable at room temperature for months. Check for
 precipitate before use — if cloudy, discard and remake.
@@ -106,20 +112,17 @@ of each 5× solution. 1 L prep gives excess for future use.
 | Component | Volume | Notes |
 | :-- | :--: | :-- |
 | 5× ASW Solution 1 | 100 mL | Anions + monovalent cations |
-| 5× ASW Solution 2 | 100 mL | Divalent cations |
-| NaNO₃ stock | 1 mL | 75.00 g/L dH₂O (882 mM) → 8.82 × 10⁻⁴ M final |
-| NaH₂PO₄·H₂O stock | 1 mL | 5.00 g/L dH₂O (36.2 mM) → 3.62 × 10⁻⁵ M final |
-| Na₂SiO₃·9H₂O stock | 1 mL | 30.00 g/L dH₂O (106 mM) → 1.06 × 10⁻⁴ M final |
+| 5× ASW Solution 2 | 100 mL | Divalent cations + NaNO₃ + NaH₂PO₄ + Na₂SiO₃ |
 | L1 trace element solution | 1 mL | see below |
 | f/2 vitamin solution | 0.5 mL | see below |
-| dH₂O | to 1 L | ~795.5 mL |
+| dH₂O | to 1 L | ~798.5 mL |
 | Agar (for plates) | 15 g | Add before autoclaving |
 
 Combine ASW solutions and dH₂O first, then add nutrient stocks. Add agar.
 Autoclave (121°C, 15 min). Final pH 8.0–8.2.
 
 **For 7 L (this protocol):** multiply all volumes by 7 (700 mL each ASW solution,
-7 mL each nutrient stock, 3.5 mL vitamins, dH₂O to volume). Split before autoclaving:
+3.5 mL vitamins, 7 mL trace elements, dH₂O to volume). Split before autoclaving:
 - **4 L portion** → add 60 g agar → autoclave → plates
 - **3.0 L portion** → no agar → autoclave → liquid media
 
