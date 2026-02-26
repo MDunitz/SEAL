@@ -37,7 +37,7 @@ reason: Protocol for setting up and maintaining REE enrichment cultures from env
 ### Media
 #### Liquid
 - Soil-track base medium (prepared per `REE_enrichment_media_preparation.md`)
-- Marine-track base medium (prepared per `REE_enrichment_media_preparation.md`)
+- Marine-track base medium: L1 + methanol (prepared per `REE_enrichment_media_preparation.md`)
 
 ### REE Stock Solutions (prepared per media protocol)
 | Stock | Concentration | Element |
@@ -96,7 +96,7 @@ reason: Protocol for setting up and maintaining REE enrichment cultures from env
 | Agitation | 150 rpm (shaking incubator) | 150 rpm |
 | Atmosphere | Aerobic (caps loosened or loose-cap tubes) | Aerobic |
 | Light | Dark (wrap rack in foil) or ambient lab light | Dark or ambient |
-| pH | 5.5–6.0 (MES buffered) | 7.5–7.8 (HEPES buffered) |
+| pH | 5.5–6.0 (MES buffered) | 8.0–8.2 (L1 carbonate buffered) |
 | Carbon source | Methanol 0.5% v/v | Methanol 0.5% v/v |
 | Transfer interval | 5–7 days | 5–7 days |
 | Number of transfers | 3–4 before isolation | 3–4 before isolation |
@@ -116,7 +116,7 @@ Examples:
 | Code | Track |
 |---|---|
 | SOIL | Soil inoculum, MES-buffered pH 5.5–6.0 |
-| MAR | Marine inoculum, HEPES/ASW-buffered pH 7.5–7.8 |
+| MAR | Marine inoculum, L1 medium pH 8.0–8.2 |
 
 ### Concentration Codes
 | Code | Final [REE] |
@@ -184,7 +184,7 @@ A, B, C (3 replicates per condition)
    | 10 pM | 10 µL of 10 nM intermediate | Intermediate 2 |
    | 0 (control) | 0 µL | — |
 
-   ⚠️ Add REE **before** inoculum. Check visually for cloudiness/precipitate after 5 min. If cloudy → note in lab notebook; the REE may be partially precipitated (expected at higher concentrations in marine medium).
+   IMPORTANT: Add REE **before** inoculum. Check visually for cloudiness/precipitate after 5 min. If cloudy → note in lab notebook; the REE may be partially precipitated (expected at higher concentrations in marine medium).
 
 3. **Inoculate:**
    - Soil track: Add **0.5 mL** soil supernatant per tube
@@ -227,7 +227,7 @@ If growth patterns are still changing, do one more transfer. "-T4" suffix.
 
 | Observation | Action |
 |---|---|
-| Growth **only** in REE-supplemented tubes (no growth at 0 µM) | 🎯 Strong candidate! REE-dependent growth. Streak for isolation. |
+| Growth **only** in REE-supplemented tubes (no growth at 0 µM) | Strong candidate — REE-dependent growth. Streak for isolation. |
 | Growth **enhanced** by REE vs. control | Good candidate. Streak highest and lowest positive concentrations. |
 | Growth **equal** across all REE concentrations including control | Not REE-dependent for methanol oxidation under these conditions. May still accumulate REE — test separately. |
 | Growth **inhibited** at high REE, normal at low REE | Toxic effect. Organism is not REE-adapted. Note threshold. |
