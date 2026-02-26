@@ -18,23 +18,14 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ### Protocol Performed By: NAME
 
 ## Notes and Observations
-- Include links to relevant pictures (or location in google drive/ocean)
-- Add notes about any deviations from the written protocol or concerns about things that seemed off
 
-## Data Storage
-### Sample Storage
+## Reference
 
-## Results Summary
+Kester DR, Duedall IW, Connors DN, Pytkowicz RM. 1967. Preparation of artificial seawater. Limnology and Oceanography 12:176-179.
 
-## Reference Documents
-- Kester DR, Duedall IW, Connors DN, Pytkowicz RM. 1967. Preparation of artificial seawater. Limnology and Oceanography 12:176-179.
-- Oliva G et al. 2024. Development of broad-range microbial minimal culture medium for lanthanide studies. Microorganisms 12(8):1531.
+## Rationale
 
-## Overview
-
-This protocol produces ~35 ppt artificial seawater suitable as a base for L1 and other marine media.
-
-**Why ASW instead of natural seawater?** Natural seawater contains 3-30 pM dissolved La (and other REEs), which would confound La=0 and La=10 pM conditions in REE experiments. Defined ASW ensures zero-La controls are truly zero. Use ACS-grade or higher purity salts to minimize trace REE contamination.
+Natural seawater contains 3-30 pM dissolved La (and other REEs), which would confound La=0 and La=10 pM conditions in REE cultivation experiments. Defined ASW ensures zero-La controls are truly zero. Use ACS-grade or higher purity salts to minimize trace REE contamination.
 
 ## Materials
 
@@ -55,16 +46,18 @@ This protocol produces ~35 ppt artificial seawater suitable as a base for L1 and
 | Sodium hydroxide (1 M) | NaOH | 40.00 | Corrosive | Gloves, goggles |
 
 ### Equipment
-- Analytical balance
-- Magnetic stir plate + stir bar
-- 1 L or 2 L volumetric flask or graduated cylinder
+
+- 2 L glass beaker or Erlenmeyer flask
+- Magnetic stir plate and stir bar
 - pH meter or strips
+- Analytical balance
+- 1 L volumetric flask or graduated cylinder
 - Refractometer (optional, for salinity verification)
 - Autoclave or 0.2 um filter sterilization setup
 
-## Protocol (1 L)
+## Preparation (1 L)
 
-Dissolve **Group 1** salts in ~800 mL dH2O in the order listed. Prepare **Group 2** as separate concentrated solutions, then add slowly with stirring to avoid Mg/Ca carbonate/sulfate precipitation.
+Dissolve Group 1 salts in ~800 mL dH2O in the order listed. Prepare Group 2 as separate concentrated solutions, then add slowly with stirring to avoid Mg/Ca carbonate/sulfate precipitation.
 
 ### Group 1 -- dissolve in sequence
 
@@ -86,23 +79,24 @@ Dissolve **Group 1** salts in ~800 mL dH2O in the order listed. Prepare **Group 
 | CaCl2-2H2O | 1.521 | 10.3 | 147.01 | Ca 2+ |
 | SrCl2-6H2O | 0.024 | 0.090 | 266.62 | Sr 2+ |
 
-### Finishing
+### Final Steps
 
 1. Bring to 1 L with dH2O.
 2. Adjust pH to 8.0-8.2 with 1 M NaOH.
-3. Autoclave or filter-sterilize (0.2 um).
+3. Autoclave or filter-sterilize.
 
-### QC
+## QC
 
-**Salinity check:** Total dissolved salts is approximately 35.3 g/L (~35 ppt). Verify with refractometer if available.
+**Salinity check:** Total dissolved salts ~ 35.3 g/L (~35 ppt). Verify with refractometer if available.
 
-## Scaling
+## Scaling Notes
 
-For 2 L: double all masses above. L1 medium uses 950 mL ASW per 1 L of medium, so 2 L ASW supports ~2.1 L of L1.
+For L1 medium preparation requiring 950 mL ASW per liter, a standard L1 batch of 2 L needs 1.9 L ASW. Prepare 2 L ASW (double all masses above).
 
-## Notes
+## Notes on Ca2+
 
-**Note on Ca 2+:** Seawater Ca 2+ (10.3 mM) competes with La 3+ for carboxyl binding sites on cell surfaces. This is the realistic marine condition. If higher La bioavailability is needed in future experiments, Ca 2+ can be reduced to 1 mM (see Oliva et al. 2024), but for screening experiments keep natural seawater ratios.
+Seawater Ca2+ (10.3 mM) competes with La3+ for carboxyl binding sites on cell surfaces. This is the realistic marine condition. If higher La bioavailability is needed in future experiments, Ca2+ can be reduced to 1 mM (see Oliva et al. 2024), but for screening experiments keep natural seawater ratios.
 
-## Disposal
-- Unused ASW can be disposed down the drain (all components are seawater salts at environmental concentrations).
+## Storage
+
+Room temperature. Stable indefinitely if autoclaved.
