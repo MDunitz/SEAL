@@ -12,8 +12,8 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ---
 
 # L1 × Lanthanum × Methanol Factorial Cultivation (12 Combinations)
-### Version: V3
-### Protocol Update Date: 2026-02-26
+### Version: V1
+### Protocol Update Date: 2026-02-25
 ### Run Date: YEAR-MONTH-DATE
 ### Protocol Performed By: NAME
 

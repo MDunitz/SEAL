@@ -4,8 +4,8 @@ reason: Protocol for preparing phosphate-free minimal media for REE enrichment c
 ---
 
 # REE Enrichment Media Preparation
-### Version: V2
-### Protocol Update Date: 2026-02-26
+### Version: V1
+### Protocol Update Date: 2026-02-22
 ### Run Date: YEAR-MONTH-DATE
 ### Protocol Performed By: NAME
 
