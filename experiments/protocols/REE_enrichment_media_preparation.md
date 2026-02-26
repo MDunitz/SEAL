@@ -4,8 +4,8 @@ reason: Protocol for preparing phosphate-free minimal media for REE enrichment c
 ---
 
 # REE Enrichment Media Preparation
-### Version: V1
-### Protocol Update Date: 2026-02-22
+### Version: V2
+### Protocol Update Date: 2026-02-26
 ### Run Date: YEAR-MONTH-DATE
 ### Protocol Performed By: NAME
 
@@ -16,6 +16,7 @@ reason: Protocol for preparing phosphate-free minimal media for REE enrichment c
 ## Results Summary
 
 ## Reference Documents
+- `experiments/protocols/L1_medium_preparation.md` — L1 medium preparation (marine-track base)
 - Oliva et al. (2024) *Microorganisms* 12(8):1531. [PMC11356471](https://pmc.ncbi.nlm.nih.gov/articles/PMC11356471/)
 - Inorganic Ventures, "Sample Preparation Guide: Rare Earth Elements." https://www.inorganicventures.com/sample-preparation-guide/samples-containing-rare-earth-elements
 
@@ -34,8 +35,8 @@ reason: Protocol for preparing phosphate-free minimal media for REE enrichment c
 
 This protocol prepares two media variants:
 
-1. **Soil-track medium** — MES-buffered, pH 5.5–6.0 (keeps HREEs dissolved)
-2. **Marine-track medium** — HEPES-buffered, artificial seawater, pH 7.5–7.8
+1. **Soil-track medium** — MES-buffered, pH 5.5-6.0 (keeps HREEs dissolved)
+2. **Marine-track medium** — L1 medium (Guillard & Hargraves 1993), prepared per `L1_medium_preparation.md`
 
 #### Soil-Track Base Medium (1 L)
 
@@ -49,7 +50,7 @@ This protocol prepares two media variants:
 | CaCl₂·2H₂O | 0.015 g | 0.10 mM | Keep LOW — Ca²⁺ competes with REE³⁺ |
 | MilliQ water | to 1 L | — | — |
 
-**Adjust pH to 5.5–6.0 with 1 M NaOH.** Autoclave 121°C, 20 min.
+**Adjust pH to 5.5-6.0 with 1 M NaOH.** Autoclave 121°C, 20 min.
 
 **Post-autoclave additions (filter-sterilize, add aseptically):**
 - Methanol: 5 mL (0.5% v/v final) — from sterile-filtered stock
@@ -57,30 +58,36 @@ This protocol prepares two media variants:
 - Trace metals: 1 mL of 1000× stock (recipe below)
 - REE stock: volume per experimental condition (see REE Stock Solutions section)
 
-#### Marine-Track Base Medium (1 L)
+#### Marine-Track Base Medium — Use L1
 
-| Component | Amount | Final Conc. | Notes |
-|---|---|---|---|
-| HEPES free acid | 2.38 g | 10 mM | pH buffer, pKa 7.5 |
-| NaCl | 23.5 g | 402 mM | Seawater salinity |
-| MgCl₂·6H₂O | 5.08 g | 25 mM | ASW Mg |
-| Na₂SO₄ | 3.92 g | 27.6 mM | ASW sulfate |
-| CaCl₂·2H₂O | 1.10 g | 7.5 mM | ASW Ca — higher than soil but required for marine organisms |
-| KCl | 0.66 g | 8.9 mM | ASW K |
-| NaHCO₃ | 0.19 g | 2.3 mM | ASW bicarbonate |
-| NH₄Cl | 0.50 g | 9.3 mM | N source |
-| MilliQ water | to 1 L | — | — |
+Use L1 medium already prepared per `L1_medium_preparation.md`. L1 includes ASW base, trace
+elements, and vitamins. No additional marine trace metals or vitamin stocks are needed.
 
-**Adjust pH to 7.5–7.8 with 1 M NaOH.** Autoclave 121°C, 20 min.
+**Post-autoclave additions to L1 (filter-sterilize, add aseptically):**
+- Methanol: 5 mL per L (0.5% v/v final)
+- REE stock: volume per experimental condition (see REE Stock Solutions section)
+- **Do NOT add REE yet** — add to individual culture tubes immediately before inoculation
 
-**Post-autoclave additions (filter-sterilize, add aseptically):**
-- Methanol: 5 mL (0.5% v/v final)
-- KH₂PO₄: 20 µL of 100 mM stock → 2 µM final (ocean-realistic, minimal REE precipitation)
-- Trace metals: 1 mL of 1000× stock
-- Marine vitamins: 1 mL of 1000× stock (B₁₂, thiamine, biotin)
-- REE stock: volume per experimental condition
+**Differences from the original HEPES-buffered marine recipe and their implications:**
 
-⚠️ **Note on marine Ca²⁺ and REE:** The marine track has 7.5 mM Ca²⁺ (realistic for seawater), which will compete with REE³⁺ for binding sites. This is by design — we want marine-realistic conditions. REE bioavailability will be lower than in the soil track.
+| Parameter | Original REE marine medium | L1 medium | Implication |
+| :-- | :--: | :--: | :-- |
+| pH buffer | HEPES 10 mM (pKa 7.5) | NaHCO₃ 2.07 mM | L1 relies on carbonate buffering; pH less tightly controlled |
+| EDTA | None | 11.7 µM (Na₂EDTA) | Chelates REE — reduces free [REE³⁺] in solution. La-EDTA log K ~15.5, but Fe³⁺ (log K ~25.1) occupies most EDTA sites |
+| Phosphate | 2 µM (KH₂PO₄) | 36.2 µM (NaH₂PO₄) | 18× higher — expect partial La precipitation as LaPO₄ at 10 µM La. Subnanomolar La conditions unaffected |
+| Ca²⁺ | 7.5 mM | 9.14 mM | Slightly higher Ca²⁺ competition for binding sites |
+| N source | NH₄Cl 9.3 mM | NaNO₃ 882 µM | L1 uses nitrate not ammonium; lower total N. Sufficient for enrichment |
+| Trace metals | Phosphate-free stock, FeCl₂ | L1 trace elements with EDTA-chelated FeCl₃ | L1 metals are EDTA-buffered; different speciation |
+
+**These trade-offs are acceptable for screening enrichments.** The EDTA and phosphate reduce
+free REE availability, but organisms that grow under these constraints are robust candidates for
+real-world bioaccumulation where competing ligands are always present. If REE-dependent growth
+is not observed in the marine track with L1, consider repeating with the original HEPES-buffered
+recipe (archived in git history of this file) to distinguish medium effects from biological ones.
+
+**Note on marine Ca²⁺ and REE:** L1 has 9.14 mM Ca²⁺ (realistic for seawater), which will
+compete with REE³⁺ for binding sites. This is by design — we want marine-realistic conditions.
+REE bioavailability will be lower than in the soil track.
 
 ### Stock Solutions
 
@@ -103,7 +110,10 @@ Filter-sterilize (0.2 µm). Store at 4°C. Stable for 6 months.
 
 **Lab inventory check:** FeCl₂·4H₂O, MnCl₂·4H₂O, CoCl₂·6H₂O, ZnCl₂, Na₂MoO₄·2H₂O, NiCl₂·6H₂O are in the Chem Cabinet. Verify CuCl₂·2H₂O and H₃BO₃ availability.
 
-#### Marine Vitamin Stock (1000×)
+#### Marine Vitamin Stock (1000×) — only needed if using original HEPES marine recipe
+
+Not required when using L1 for the marine track (L1 already contains f/2 vitamins).
+Retained here for reference if reverting to the HEPES-buffered recipe.
 
 Per 100 mL MilliQ:
 
@@ -189,7 +199,7 @@ To achieve final REE concentrations in a 10 mL culture tube:
 | **Chemical** | **Formula** | **MW (g/mol)** | **Safety Concerns** | **PPE** | **Disposal** | **Location** |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | MES free acid | C₆H₁₃NO₄S | 195.24 | Low hazard | Gloves, goggles | Drain | Chem Cabinet |
-| HEPES free acid | C₈H₁₈N₂O₄S | 238.30 | Low hazard | Gloves, goggles | Drain | Chem Cabinet |
+| HEPES free acid | C₈H₁₈N₂O₄S | 238.30 | Low hazard | Gloves, goggles | Drain | Chem Cabinet (only needed if reverting to original marine recipe) |
 | NH₄Cl | NH₄Cl | 53.49 | Irritant | Gloves, goggles | Drain | Chem Cabinet |
 | NaCl | NaCl | 58.44 | None | Gloves | Drain | Chem Cabinet |
 | Methanol | CH₃OH | 32.04 | Flammable, toxic | Gloves, goggles, fume hood | Flammables waste | Flammables Cabinet |
@@ -245,7 +255,7 @@ Not applicable — this protocol is for media preparation only. See `REE_enrichm
 4. Filter-sterilize (0.2 µm)
 5. Store at 4°C in acid-washed LDPE bottles
 
-⚠️ REE chloride hexahydrates are **hygroscopic** — work quickly, keep stock bottles sealed with desiccant.
+IMPORTANT: REE chloride hexahydrates are **hygroscopic** — work quickly, keep stock bottles sealed with desiccant.
 
 #### Part C: Soil-Track Medium (1 L)
 
@@ -267,29 +277,13 @@ Not applicable — this protocol is for media preparation only. See `REE_enrichm
 7. Check pH again; adjust if needed
 8. **Do NOT add REE yet** — add REE to individual culture tubes immediately before inoculation
 
-#### Part D: Marine-Track Medium (1 L)
+#### Part D: Marine-Track Medium (from L1)
 
-1. Dissolve in ~900 mL MilliQ in a 1 L Erlenmeyer, stirring:
-   - NaCl: 23.5 g
-   - MgCl₂·6H₂O: 5.08 g
-   - Na₂SO₄: 3.92 g
-   - KCl: 0.66 g
-   - HEPES free acid: 2.38 g
-   - NH₄Cl: 0.50 g
-2. Adjust pH to **7.6** with 1 M NaOH
-3. Add slowly while stirring (may precipitate briefly):
-   - CaCl₂·2H₂O: 1.10 g
-   - NaHCO₃: 0.19 g
-4. Bring to 1 L with MilliQ
-5. Autoclave 121°C, 20 min
-6. Cool to room temperature
-7. Aseptically add (filter-sterilized):
-   - 5 mL methanol (0.5% v/v)
-   - 20 µL of 100 mM KH₂PO₄ (2 µM final)
-   - 1 mL trace metals stock
-   - 1 mL marine vitamin stock (B₁₂, thiamine, biotin)
-8. Check pH; adjust if needed
-9. **Do NOT add REE yet**
+1. Use L1 medium prepared per `L1_medium_preparation.md` (liquid, no agar)
+2. Aseptically add (filter-sterilized):
+   - 5 mL methanol per L (0.5% v/v)
+3. Dispense into culture tubes (9.5 mL per tube)
+4. **Do NOT add REE yet** — add to individual tubes immediately before inoculation
 
 #### Part E: Serial Dilution of REE Working Stocks
 
@@ -309,9 +303,9 @@ Not applicable — this protocol is for media preparation only. See `REE_enrichm
 | Day | Task |
 |---|---|
 | Day 0 | Acid-wash glassware, prepare HCl bath |
-| Day 1 | Make trace metals stock, REE stock solutions, glycerophosphate stock |
-| Day 2 | Make base media (soil + marine), autoclave |
-| Day 3 | Add post-autoclave supplements; prepare serial dilutions; proceed to culturing protocol |
+| Day 1 | Make trace metals stock (soil track), REE stock solutions, glycerophosphate stock |
+| Day 2 | Make soil-track base medium, autoclave. Confirm L1 is available (per `L1_medium_preparation.md`) |
+| Day 3 | Add post-autoclave supplements to soil medium; add methanol to L1; prepare serial dilutions; proceed to culturing protocol |
 
 ## Data analysis
 N/A — media preparation protocol. Track pH measurements and any issues with precipitation.
