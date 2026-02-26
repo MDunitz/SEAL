@@ -93,6 +93,52 @@ Dissolve Group 1 salts in ~800 mL dH2O in the order listed. Prepare Group 2 as s
 
 For L1 medium preparation requiring 950 mL ASW per liter, a standard L1 batch of 2 L needs 1.9 L ASW. Prepare 2 L ASW (double all masses above).
 
+For larger or repeated batches, use the 5x concentrate method below.
+
+## 5x Concentrate Preparation
+
+Prepare Solutions 1 and 2 **separately** -- Ca2+ (Soln 2) precipitates as CaSO4/CaCO3
+if mixed with sulfate/bicarbonate (Soln 1) at 5x concentration. Combine only at time of
+use by diluting to 1x.
+
+**To make 1 L of 1x ASW from concentrates:** 100 mL Solution 1 + 100 mL Solution 2 + dH2O to 1 L. Adjust pH to 8.0-8.2.
+
+### Solution 1 -- Anions + monovalent cations (5x, 1 L)
+
+Dissolve NaCl first, then remaining salts in order. Bring to 1 L with dH2O. Autoclave.
+
+| Salt | Formula | MW (g/mol) | 1x conc. | 5x mass per L (g) |
+| :-- | :-- | :--: | :--: | :--: |
+| Sodium chloride | NaCl | 58.44 | 409.2 mM | 119.63 |
+| Sodium sulfate | Na2SO4 | 142.04 | 28.2 mM | 20.04 |
+| Potassium chloride | KCl | 74.55 | 9.08 mM | 3.385 |
+| Sodium bicarbonate | NaHCO3 | 84.01 | 2.33 mM | 0.980 |
+| Potassium bromide | KBr | 119.00 | 823 uM | 0.490 |
+| Boric acid | H3BO3 | 61.83 | 420 uM | 0.130 |
+| Sodium fluoride | NaF | 41.99 | 71.4 uM | 0.015 |
+
+### Solution 2 -- Divalent cations (5x, 1 L)
+
+Dissolve MgCl2 first, then CaCl2 (exothermic), then SrCl2. Bring to 1 L. Autoclave.
+
+| Salt | Formula | MW (g/mol) | 1x conc. | 5x mass per L (g) |
+| :-- | :-- | :--: | :--: | :--: |
+| Magnesium chloride hexahydrate | MgCl2-6H2O | 203.30 | 53.3 mM | 54.19 |
+| Calcium chloride dihydrate | CaCl2-2H2O | 147.01 | 10.3 mM | 7.605 |
+| Strontium chloride hexahydrate | SrCl2-6H2O | 266.62 | 90 uM | 0.120 |
+
+### Shelf life
+
+5x concentrates are stable at room temperature for months. Discard if precipitate forms.
+
+### Note on L1 protocol 5x tables
+
+The `L1_REE_methanol_dark_microbe_cultivation.md` protocol uses slightly different ASW
+concentrations (e.g. NaCl 362.5 mM vs 409.2 mM here) based on a Benchling-modified recipe
+that accounts for ion contributions from L1 nutrient stocks. Both are valid Kester-derived
+formulations. Use the tables in this file for standalone ASW; use the L1 protocol tables
+when preparing L1 medium directly from 5x concentrates.
+
 ## Notes on Ca2+
 
 Seawater Ca2+ (10.3 mM) competes with La3+ for carboxyl binding sites on cell surfaces. This is the realistic marine condition. If higher La bioavailability is needed in future experiments, Ca2+ can be reduced to 1 mM (see Oliva et al. 2024), but for screening experiments keep natural seawater ratios.
