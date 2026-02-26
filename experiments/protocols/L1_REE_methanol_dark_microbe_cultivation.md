@@ -12,7 +12,7 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ---
 
 # L1 x Lanthanum x Methanol Factorial Cultivation (12 Combinations)
-### Version: V2
+### Version: V3
 ### Protocol Update Date: 2026-02-25
 ### Run Date: YEAR-MONTH-DATE
 ### Protocol Performed By: NAME
@@ -29,13 +29,16 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ## Reference Documents
 - Dunitz MI, Lang JM, Jospin G, Darling AE, Eisen JA, Coil DA. 2015. Swabs to genomes: a comprehensive workflow. PeerJ 3:e960. https://doi.org/10.7717/peerj.960
 - Guillard RRL, Hargraves PE. 1993. Stichochrysis immobilis is a diatom, not a chrysophyte. Phycologia 32:234-236.
+- Kester DR, Duedall IW, Connors DN, Pytkowicz RM. 1967. Preparation of artificial seawater. Limnol Oceanogr 12:176-179.
 - Voutsinos MY, Banfield JF, McClelland HLO. 2025. Extensive and diverse lanthanide-dependent metabolism in the ocean. ISME J 19(1):wraf057.
 - Pol A et al. 2014. Rare earth metals are essential for methanotrophic life in volcanic mudpots. Environ Microbiol 16:255-264.
+- Oliva G et al. 2024. Development of broad-range microbial minimal culture medium for lanthanide studies. Microorganisms 12(8):1531.
 - Cotruvo JA. 2019. The chemistry of lanthanides in biology. ACS Cent Sci 5:1496-1506.
 - Skovran E, Raghuraman C, Martinez-Gomez NC. 2019. Lanthanides in methylotrophy. Curr Issues Mol Biol 33:101-116.
 - Mattocks JA, Ho JV, Cotruvo JA. 2019. A selective, protein-based fluorescent sensor with picomolar affinity for rare earth elements. JACS 141:2857-2861.
 
 ## Prerequisites
+
 - Autoclaved L1 agar base (2 L) -- see `L1_medium_preparation.md`
 - ASW -- see `ASW_kester_1967.md`
 
@@ -124,7 +127,6 @@ Add to agar cooled to ~50 C. Pour immediately.
 
 | Instrument | Standards/Calibration | Docs |
 | :-- | :--: | :--: |
-| Autoclave | 121 C / 15 psi / 15 min | |
 | Incubator (static) | 15-20 C (match source water) | |
 | Laminar flow hood / BSC | | |
 | Water bath at 50 C | | Agar cooling |
