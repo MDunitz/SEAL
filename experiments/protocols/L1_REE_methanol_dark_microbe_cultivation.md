@@ -12,8 +12,8 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ---
 
 # L1 × Lanthanum × Methanol Factorial Cultivation (12 Combinations)
-### Version: V2
-### Protocol Update Date: 2026-02-25
+### Version: V3
+### Protocol Update Date: 2026-02-26
 ### Run Date: YEAR-MONTH-DATE
 ### Protocol Performed By: NAME
 
@@ -55,7 +55,7 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 
 #### Base: Standard L1 Medium (Guillard & Hargraves 1993)
 
-Assembled from 5× ASW concentrates + L1 nutrient stocks + dH₂O.
+Assembled from 5× ASW concentrates + L1 trace elements + vitamins + dH₂O.
 
 **Why ASW instead of natural seawater?** Natural seawater contains 3–30 pM dissolved La
 (and other REEs), which would confound the La=0 and La=10 pM conditions. Defined ASW
@@ -74,32 +74,36 @@ Use a funnel for adding salts. Dissolve NaCl and Na₂SO₄ directly in bottle. 
 remaining salts individually in 30 mL dH₂O each, then add to bottle. Bring to 1 L.
 Shake well. Autoclave.
 
-| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 1 L of 5× (g) |
-| :-- | :--: | :--: | :--: | :--: |
-| NaCl | 58.44 | 21.19 | 105.95 | 105.95 |
-| Na₂SO₄ | 142.04 | 3.550 | 17.75 | 17.75 |
-| KCl | 74.55 | 0.599 | 2.995 | 2.995 |
-| KBr | 119.00 | 0.0862 | 0.431 | 0.431 |
-| H₃BO₃ | 61.83 | 0.0229 | 0.1145 | 0.1145 |
-| NaF | 41.99 | 0.00275 | 0.01375 | 0.01375 |
-| NaHCO₃ | 84.01 | 0.1735 | 0.8675 | 0.8675 |
+| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **5× (g/L)** | **For 1 L of 5× (g)** |
+| :-- | :-- | :--: | :--: | :--: | :--: |
+| Sodium chloride | NaCl | 58.44 | 362.5 mM | 105.95 | 105.95 |
+| Sodium sulfate | Na₂SO₄ | 142.04 | 25.0 mM | 17.75 | 17.75 |
+| Potassium chloride | KCl | 74.55 | 8.03 mM | 2.995 | 2.995 |
+| Potassium bromide | KBr | 119.00 | 724 µM | 0.431 | 0.431 |
+| Boric acid | H₃BO₃ | 61.83 | 370 µM | 0.1145 | 0.1145 |
+| Sodium fluoride | NaF | 41.99 | 65.5 µM | 0.01375 | 0.01375 |
+| Sodium bicarbonate | NaHCO₃ | 84.01 | 2.07 mM | 0.8675 | 0.8675 |
 
 **Solution 2 — Divalent cations + L1 nutrient stocks (5× concentrate, 1 L)**
 
 Dissolve MgCl₂·6H₂O and CaCl₂·2H₂O directly in bottle. Add SrCl₂·6H₂O.
-Then add L1 nutrient stocks at 5× volumes. Bring to 1 L. Shake well. Autoclave.
+Then add L1 nutrient stocks (from Bigelow L1 kit or prepared stocks) at 5× volumes.
+Bring to 1 L. Shake well. Autoclave.
 
-| Salt | MW (g/mol) | 1× (g/L) | 5× (g/L) | For 1 L of 5× (g) |
-| :-- | :--: | :--: | :--: | :--: |
-| MgCl₂·6H₂O | 203.30 | 9.592 | 47.96 | 47.96 |
-| CaCl₂·2H₂O | 147.01 | 1.344 | 6.72 | 6.72 |
-| SrCl₂·6H₂O | 266.62 | 0.0219 | 0.1095 | 0.1095 |
+| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **5× (g/L)** | **For 1 L of 5× (g)** |
+| :-- | :-- | :--: | :--: | :--: | :--: |
+| Magnesium chloride hexahydrate | MgCl₂·6H₂O | 203.30 | 47.2 mM | 47.96 | 47.96 |
+| Calcium chloride dihydrate | CaCl₂·2H₂O | 147.01 | 9.14 mM | 6.72 | 6.72 |
+| Strontium chloride hexahydrate | SrCl₂·6H₂O | 266.62 | 82.1 µM | 0.1095 | 0.1095 |
 
-| L1 nutrient stock | Stock conc. | 1× vol/L | 5× vol/L | For 1 L of 5× (mL) |
+| **L1 nutrient stock** | **Stock conc.** | **Target 1× conc.** | **5× vol/L (mL)** | **For 1 L of 5× (mL)** |
 | :-- | :-- | :--: | :--: | :--: |
-| NaNO₃ | 75.00 g/L dH₂O (882 mM) | 1 mL | 5 mL | 5 |
-| NaH₂PO₄·H₂O | 5.00 g/L dH₂O (36.2 mM) | 1 mL | 5 mL | 5 |
-| Na₂SiO₃·9H₂O | 30.00 g/L dH₂O (106 mM) | 1 mL | 5 mL | 5 (optional — only needed for diatoms/siliceous phytoplankton; not required for bacterial targets but included to match standard L1) |
+| NaNO₃ | 75.00 g/L (882 mM) | 882 µM | 5 | 5 |
+| NaH₂PO₄·H₂O | 5.00 g/L (36.2 mM) | 36.2 µM | 5 | 5 |
+| Na₂SiO₃·9H₂O (optional) | 30.00 g/L (106 mM) | 106 µM | 5 | 5 |
+
+Na₂SiO₃ is only required for diatoms/siliceous phytoplankton — not needed for bacterial
+targets, but included to match standard L1 and avoid excluding silicate-requiring organisms.
 
 **Shelf life:** 5× concentrates are stable at room temperature for months. Check for
 precipitate before use — if cloudy, discard and remake.
@@ -109,24 +113,24 @@ of each 5× solution. 1 L prep gives excess for future use.
 
 #### L1 Medium Assembly (per 1 L)
 
-| Component | Volume | Notes |
+| **Component** | **Volume** | **Notes** |
 | :-- | :--: | :-- |
 | 5× ASW Solution 1 | 100 mL | Anions + monovalent cations |
-| 5× ASW Solution 2 | 100 mL | Divalent cations + NaNO₃ + NaH₂PO₄ + Na₂SiO₃ |
-| L1 trace element solution | 1 mL | see below |
-| f/2 vitamin solution | 0.5 mL | see below |
+| 5× ASW Solution 2 | 100 mL | Divalent cations + N, P, Si |
+| L1 trace element solution | 1 mL | See below |
+| f/2 vitamin solution | 0.5 mL | See below — MAKE FRESH |
 | dH₂O | to 1 L | ~798.5 mL |
-| Agar (for plates) | 15 g | Add before autoclaving |
+| Agar (for plates only) | 15 g | Add before autoclaving |
 
-Combine ASW solutions and dH₂O first, then add nutrient stocks. Add agar.
-Autoclave (121°C, 15 min). Final pH 8.0–8.2.
+Combine ASW solutions and dH₂O first, then add trace elements and vitamins. Add agar
+for plate batches. Autoclave (121°C, 15 min). Final pH 8.0–8.2.
 
 **For 7 L (this protocol):** multiply all volumes by 7 (700 mL each ASW solution,
-3.5 mL vitamins, 7 mL trace elements, dH₂O to volume). Split before autoclaving:
-- **4 L portion** → add 60 g agar → autoclave → plates
-- **3.0 L portion** → no agar → autoclave → liquid media
+7 mL trace elements, 3.5 mL vitamins, dH₂O to volume). Split before autoclaving:
+- **4 L portion** → add 60 g agar → autoclave in 4 × 1 L bottles → plates
+- **3 L portion** → no agar → autoclave → liquid media
 
-**Note on Ca²⁺:** Final Ca²⁺ is ~9.1 mM (from CaCl₂·2H₂O), which competes with La³⁺
+**Note on Ca²⁺:** Final Ca²⁺ is 9.14 mM (from CaCl₂·2H₂O), which competes with La³⁺
 for carboxyl binding sites on cell surfaces. This is the realistic marine condition. For
 higher La bioavailability in future experiments, Ca²⁺ can be reduced (see Oliva et al. 2024).
 
@@ -271,22 +275,71 @@ Dispense into twelve 250 mL aliquots post-autoclave, add La and MeOH to each.
 
 ### Chemicals
 
-| **Chemical** | **Formula** | **MW (g/mol)** | **Safety Concerns** | **PPE** | **Disposal** | **Location** |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| Lanthanum chloride heptahydrate | LaCl₃·7H₂O | 371.37 | Irritant | Gloves, goggles | Heavy metal waste | Lab inventory |
-| Methanol | CH₃OH | 32.04 | Flammable, toxic; flash pt 11°C | Gloves, goggles, fume hood | Organic solvent waste | Flammables cabinet |
-| Hydrochloric acid (1 M) | HCl | 36.46 | Corrosive | Gloves, goggles | Acid waste | |
-| Agar (bacteriological) | — | — | None | Standard | Autoclave waste | |
-| Sodium chloride | NaCl | 58.44 | None | Standard | Drain | |
-| Sodium sulfate | Na₂SO₄ | 142.04 | None | Standard | Drain | |
-| Potassium chloride | KCl | 74.55 | None | Standard | Drain | |
-| Sodium bicarbonate | NaHCO₃ | 84.01 | None | Standard | Drain | |
-| Potassium bromide | KBr | 119.00 | None | Standard | Drain | |
-| Boric acid | H₃BO₃ | 61.83 | Reproductive toxin at high dose | Gloves | Drain (dilute) | |
-| Sodium fluoride | NaF | 41.99 | Toxic if ingested | Gloves, goggles | Chemical waste | |
-| Magnesium chloride hexahydrate | MgCl₂·6H₂O | 203.30 | Irritant | Gloves | Drain | |
-| Calcium chloride dihydrate | CaCl₂·2H₂O | 147.01 | Irritant; exothermic on dissolving | Gloves | Drain | |
-| Strontium chloride hexahydrate | SrCl₂·6H₂O | 266.62 | Irritant | Gloves | Chemical waste | |
+**ASW salts (5× Solution 1 — anions + monovalent cations)**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :--: | :-- | :-- | :-- |
+| Sodium chloride | NaCl | 58.44 | 362.5 mM | None | Standard | Drain |
+| Sodium sulfate | Na₂SO₄ | 142.04 | 25.0 mM | None | Standard | Drain |
+| Potassium chloride | KCl | 74.55 | 8.03 mM | None | Standard | Drain |
+| Potassium bromide | KBr | 119.00 | 724 µM | None | Standard | Drain |
+| Boric acid | H₃BO₃ | 61.83 | 370 µM | Reproductive toxin at high dose | Gloves | Drain (dilute) |
+| Sodium fluoride | NaF | 41.99 | 65.5 µM | Toxic if ingested | Gloves, goggles | Chemical waste |
+| Sodium bicarbonate | NaHCO₃ | 84.01 | 2.07 mM | None | Standard | Drain |
+
+**ASW salts (5× Solution 2 — divalent cations)**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :--: | :-- | :-- | :-- |
+| Magnesium chloride hexahydrate | MgCl₂·6H₂O | 203.30 | 47.2 mM | Irritant | Gloves | Drain |
+| Calcium chloride dihydrate | CaCl₂·2H₂O | 147.01 | 9.14 mM | Irritant; exothermic on dissolving | Gloves | Drain |
+| Strontium chloride hexahydrate | SrCl₂·6H₂O | 266.62 | 82.1 µM | Irritant | Gloves | Chemical waste |
+
+**L1 nutrients (added to 5× Solution 2 from stock bottles)**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Stock bottle conc.** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :--: | :--: | :-- | :-- | :-- |
+| Sodium nitrate | NaNO₃ | 85.00 | 882 mM (75.0 g/L) | 882 µM | Oxidizer | Gloves | Drain |
+| Sodium dihydrogen phosphate monohydrate | NaH₂PO₄·H₂O | 137.99 | 36.2 mM (5.00 g/L) | 36.2 µM | None | Standard | Drain |
+| Sodium metasilicate nonahydrate (optional) | Na₂SiO₃·9H₂O | 284.20 | 106 mM (30.0 g/L) | 106 µM | Irritant | Gloves | Drain |
+
+**L1 trace elements (1 mL/L of trace element solution)**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Stock conc.** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :--: | :--: | :-- | :-- | :-- |
+| Na₂EDTA dihydrate | Na₂EDTA·2H₂O | 372.24 | 11.7 mM (4.36 g/L) | 11.7 µM | Irritant | Gloves | Drain |
+| Ferric chloride hexahydrate | FeCl₃·6H₂O | 270.30 | 11.7 mM (3.15 g/L) | 11.7 µM | Irritant, stains | Gloves, goggles | Chemical waste |
+| Manganese chloride tetrahydrate | MnCl₂·4H₂O | 197.91 | 900 mM (178.1 g/L) | 900 nM | Irritant | Gloves | Chemical waste |
+| Zinc sulfate heptahydrate | ZnSO₄·7H₂O | 287.56 | 80.0 mM (23.0 g/L) | 80.0 nM | Irritant | Gloves | Chemical waste |
+| Cobalt chloride hexahydrate | CoCl₂·6H₂O | 237.93 | 50.0 mM (11.9 g/L) | 50.0 nM | Carcinogen (Cat 1B) | Gloves, goggles, hood | Chemical waste |
+| Cupric sulfate pentahydrate | CuSO₄·5H₂O | 249.69 | 10.0 mM (2.50 g/L) | 10.0 nM | Irritant, aquatic toxic | Gloves | Chemical waste |
+| Sodium molybdate dihydrate | Na₂MoO₄·2H₂O | 241.95 | 82.2 mM (19.9 g/L) | 82.2 nM | Irritant | Gloves | Chemical waste |
+| Selenious acid | H₂SeO₃ | 128.97 | 10.0 mM (1.29 g/L) | 10.0 nM | Toxic | Gloves, goggles, hood | Chemical waste |
+| Nickel sulfate hexahydrate | NiSO₄·6H₂O | 262.85 | 10.0 mM (2.63 g/L) | 10.0 nM | Carcinogen (Cat 1A) | Gloves, goggles, hood | Chemical waste |
+| Sodium orthovanadate | Na₃VO₄ | 183.94 | 10.0 mM (1.84 g/L) | 10.0 nM | Toxic | Gloves, goggles | Chemical waste |
+| Potassium chromate | K₂CrO₄ | 194.19 | 10.0 mM (1.94 g/L) | 10.0 nM | Carcinogen (Cat 1B), oxidizer | Gloves, goggles, hood | Chemical waste |
+
+**f/2 vitamins (0.5 mL/L of vitamin solution — MAKE FRESH)**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Stock conc.** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :--: | :--: | :-- | :-- | :-- |
+| Thiamine hydrochloride (B₁) | C₁₂H₁₇ClN₄OS·HCl | 337.27 | 593 µM (200 mg/L) | 296 nM | None | Standard | Drain |
+| Biotin (H) | C₁₀H₁₆N₂O₃S | 244.31 | 4.09 µM (1.0 mg/L) | 2.05 nM | None | Standard | Drain |
+| Cyanocobalamin (B₁₂) | C₆₃H₈₈CoN₁₄O₁₄P | 1355.37 | 0.738 µM (1.0 mg/L) | 0.369 nM | None | Standard | Drain |
+
+**Experimental variables**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :--: | :-- | :-- | :-- |
+| Lanthanum chloride heptahydrate | LaCl₃·7H₂O | 371.37 | 0 / 10 pM / 10 nM / 10 µM | Irritant | Gloves, goggles | Heavy metal waste |
+| Methanol | CH₃OH | 32.04 | 0 / 1 mM / 100 mM | Flammable, toxic; flash pt 11°C | Gloves, goggles, fume hood | Organic solvent waste |
+
+**Other reagents**
+
+| **Chemical** | **Formula** | **MW (g/mol)** | **Purpose** | **Safety** | **PPE** | **Disposal** |
+| :-- | :-- | :--: | :-- | :-- | :-- | :-- |
+| Hydrochloric acid (1 M) | HCl | 36.46 | La stock pH adjustment | Corrosive | Gloves, goggles | Acid waste |
+| Agar (bacteriological) | — | — | Solidifying agent (15 g/L) | None | Standard | Autoclave waste |
 
 ## Culture Conditions
 - **Temperature:** Match source water (15–20°C)
