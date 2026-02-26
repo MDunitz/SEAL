@@ -59,27 +59,51 @@ Natural seawater contains 3-30 pM dissolved La (and other REEs), which would con
 
 ## Preparation (1 L)
 
-Dissolve Group 1 salts in ~800 mL dH2O in the order listed. Prepare Group 2 as separate concentrated solutions, then add slowly with stirring to avoid Mg/Ca carbonate/sulfate precipitation.
+Dissolve Group 1 major salts directly. Add Group 2 separately with stirring. Minor salts (NaHCO3, KBr, H3BO3, NaF, SrCl2) are added from 1 M filter-sterilized stocks rather than weighing sub-gram quantities.
 
-### Group 1 -- dissolve in sequence
+### Minor Salt Stock Solutions (1 M, 50 mL each)
+
+Dissolve in 50 mL dH2O. Filter-sterilize (0.2 um). Label with name, concentration, date.
+
+| Stock | Formula | MW (g/mol) | Mass for 50 mL | Storage |
+| :-- | :-- | :--: | :--: | :-- |
+| Sodium bicarbonate | NaHCO3 | 84.01 | 4.201 g | 4 C (slow CO2 loss at RT) |
+| Potassium bromide | KBr | 119.00 | 5.950 g | Bench |
+| Boric acid | H3BO3 | 61.83 | 3.092 g | Bench |
+| Sodium fluoride | NaF | 41.99 | 2.100 g | Bench (toxic -- keep labeled and capped) |
+| Strontium chloride hexahydrate | SrCl2-6H2O | 266.62 | 13.331 g | Bench |
+
+Stable for months after filter sterilization. NaHCO3 stock should be remade every 3-6 months.
+
+### Group 1 -- dissolve directly in sequence
 
 | Salt | g/L | mM | MW (g/mol) | Ion supplied |
 | :-- | :--: | :--: | :--: | :-- |
 | NaCl | 21.190 | 362.5 | 58.44 | Na+, Cl- |
 | Na2SO4 | 3.550 | 25.0 | 142.04 | SO4 2- |
 | KCl | 0.599 | 8.03 | 74.55 | K+ |
-| NaHCO3 | 0.174 | 2.07 | 84.01 | HCO3- (alkalinity) |
-| KBr | 0.086 | 0.724 | 119.00 | Br- |
-| H3BO3 | 0.023 | 0.370 | 61.83 | B(OH)3 |
-| NaF | 0.003 | 0.066 | 41.99 | F- |
 
-### Group 2 -- add separately with stirring
+### Group 1 -- add from 1 M stocks
+
+| Stock | 1x conc. | Vol per 1 L |
+| :-- | :--: | :--: |
+| NaHCO3 | 2.07 mM | 2.07 mL |
+| KBr | 724 uM | 724 uL |
+| H3BO3 | 370 uM | 370 uL |
+| NaF | 65.5 uM | 65.5 uL |
+
+### Group 2 -- dissolve directly, add separately with stirring
 
 | Salt | g/L | mM | MW (g/mol) | Ion supplied |
 | :-- | :--: | :--: | :--: | :-- |
 | MgCl2-6H2O | 9.592 | 47.2 | 203.30 | Mg 2+ |
 | CaCl2-2H2O | 1.344 | 9.14 | 147.01 | Ca 2+ |
-| SrCl2-6H2O | 0.022 | 0.082 | 266.62 | Sr 2+ |
+
+### Group 2 -- add from 1 M stock
+
+| Stock | 1x conc. | Vol per 1 L |
+| :-- | :--: | :--: |
+| SrCl2 | 82.1 uM | 82.1 uL |
 
 ### Final Steps
 
@@ -107,27 +131,27 @@ use by diluting to 1x.
 
 ### Solution 1 -- Anions + monovalent cations (5x, 1 L)
 
-Dissolve NaCl first, then remaining salts in order. Bring to 1 L with dH2O. Autoclave.
+Dissolve NaCl and Na2SO4 directly. Add KCl. Then add minor salts from 1 M stocks. Bring to 1 L with dH2O. Autoclave.
 
-| Salt | Formula | MW (g/mol) | 1x conc. | 5x mass per L (g) |
-| :-- | :-- | :--: | :--: | :--: |
-| Sodium chloride | NaCl | 58.44 | 362.5 mM | 105.95 |
-| Sodium sulfate | Na2SO4 | 142.04 | 25.0 mM | 17.75 |
-| Potassium chloride | KCl | 74.55 | 8.03 mM | 2.995 |
-| Sodium bicarbonate | NaHCO3 | 84.01 | 2.07 mM | 0.8675 |
-| Potassium bromide | KBr | 119.00 | 724 uM | 0.431 |
-| Boric acid | H3BO3 | 61.83 | 370 uM | 0.1145 |
-| Sodium fluoride | NaF | 41.99 | 65.5 uM | 0.01375 |
+| Component | 1x conc. | Addition for 1 L of 5x |
+| :-- | :--: | :-- |
+| NaCl | 362.5 mM | 105.95 g |
+| Na2SO4 | 25.0 mM | 17.75 g |
+| KCl | 8.03 mM | 2.995 g |
+| NaHCO3 (1 M stock) | 2.07 mM | 10.35 mL |
+| KBr (1 M stock) | 724 uM | 3.62 mL |
+| H3BO3 (1 M stock) | 370 uM | 1.85 mL |
+| NaF (1 M stock) | 65.5 uM | 328 uL |
 
 ### Solution 2 -- Divalent cations (5x, 1 L)
 
-Dissolve MgCl2 first, then CaCl2 (exothermic), then SrCl2. Bring to 1 L. Autoclave.
+Dissolve MgCl2 first, then CaCl2 (exothermic). Add SrCl2 from 1 M stock. Bring to 1 L. Autoclave.
 
-| Salt | Formula | MW (g/mol) | 1x conc. | 5x mass per L (g) |
-| :-- | :-- | :--: | :--: | :--: |
-| Magnesium chloride hexahydrate | MgCl2-6H2O | 203.30 | 47.2 mM | 47.96 |
-| Calcium chloride dihydrate | CaCl2-2H2O | 147.01 | 9.14 mM | 6.72 |
-| Strontium chloride hexahydrate | SrCl2-6H2O | 266.62 | 82.1 uM | 0.1095 |
+| Component | 1x conc. | Addition for 1 L of 5x |
+| :-- | :--: | :-- |
+| MgCl2-6H2O | 47.2 mM | 47.96 g |
+| CaCl2-2H2O | 9.14 mM | 6.72 g |
+| SrCl2 (1 M stock) | 82.1 uM | 411 uL |
 
 ### Shelf life
 
