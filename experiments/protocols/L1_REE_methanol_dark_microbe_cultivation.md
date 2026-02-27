@@ -11,15 +11,24 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 # * When experiment is complete update the status and reason (above) and delete the rest of this section
 ---
 
-# L1 × Lanthanum × Methanol Factorial Cultivation (12 Combinations)
-### Version: V1
-### Protocol Update Date: 2026-02-25
+# L1 x Lanthanum x Methanol Factorial Cultivation (12 Conditions)
+### Version: V2
+### Protocol Update Date: 2026-02-26
 ### Run Date: YEAR-MONTH-DATE
 ### Protocol Performed By: NAME
 
 ## Notes and Observations
-- Include links to relevant pictures (or location in google drive/ocean)
-- Add notes about any deviations from the written protocol or concerns about things that seemed off
+- L1 agar base (4 L): DateCreated_TODO
+- La-1 (100 mM LaCl3): DateCreated_TODO
+- La-2 (100 uM): DateCreated_TODO
+- La-3 (100 nM): DateCreated_TODO
+- 1 M MeOH working stock: DateCreated_TODO
+
+Note which stock solutions were used (date of creation) or if new stock solutions were created
+
+For newly created stocks, note the actual measured amount of substrates added
+
+Add notes about any deviations from the written protocol or concerns about things that seemed off
 
 ## Data Storage
 ### Sample Storage
@@ -29,7 +38,6 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 ## Reference Documents
 - Dunitz MI, Lang JM, Jospin G, Darling AE, Eisen JA, Coil DA. 2015. Swabs to genomes: a comprehensive workflow. PeerJ 3:e960. https://doi.org/10.7717/peerj.960
 - Guillard RRL, Hargraves PE. 1993. Stichochrysis immobilis is a diatom, not a chrysophyte. Phycologia 32:234-236.
-- Kester DR, Duedall IW, Connors DN, Pytkowicz RM. 1967. Preparation of artificial seawater. Limnol Oceanogr 12:176-179.
 - Voutsinos MY, Banfield JF, McClelland HLO. 2025. Extensive and diverse lanthanide-dependent metabolism in the ocean. ISME J 19(1):wraf057.
 - Pol A et al. 2014. Rare earth metals are essential for methanotrophic life in volcanic mudpots. Environ Microbiol 16:255-264.
 - Oliva G et al. 2024. Development of broad-range microbial minimal culture medium for lanthanide studies. Microorganisms 12(8):1531.
@@ -37,309 +45,162 @@ reason: Provide a few (< 3) sentence summary of the experiment and if there are 
 - Skovran E, Raghuraman C, Martinez-Gomez NC. 2019. Lanthanides in methylotrophy. Curr Issues Mol Biol 33:101-116.
 - Mattocks JA, Ho JV, Cotruvo JA. 2019. A selective, protein-based fluorescent sensor with picomolar affinity for rare earth elements. JACS 141:2857-2861.
 
+## Prerequisites
+
+- 4 L autoclaved L1 agar base -- see `L1_medium_preparation.md`
+- Inoculum source identified
+
 ## TODOs
-- [x] ~~Source natural seawater or select ASW recipe~~ → using Kester et al. 1967 ASW
-- [ ] Confirm LaCl₃·7H₂O in lab inventory
-- [ ] Make fresh vitamin stocks (previous stocks left unrefrigerated)
+- [ ] Confirm LaCl3-7H2O in lab inventory
 - [ ] Decide on inoculum sources (coastal sites)
 - [ ] Determine incubation temperature based on source water
 
 ## Pretests
-- Test LaCl₃ primary stock pH (should be 2–3 after HCl addition) before serial dilution
-- Confirm La stock is clear (no precipitate) after acidification
-- Verify autoclave cycle reaches 121°C / 15 psi
+- Test La-1 primary stock pH (should be 2-3 after HCl addition) before serial dilution
+- Confirm La-1 stock is clear (no precipitate) after acidification
 
 ## Materials
 
 ### Media
 
-#### Base: Standard L1 Medium (Guillard & Hargraves 1993)
+Stock solutions, remake as needed.
 
-Assembled from 5× ASW concentrates + L1 trace elements + vitamins + dH₂O.
+#### La-1: 100 mM LaCl3 primary stock (10 mL)
 
-**Why ASW instead of natural seawater?** Natural seawater contains 3–30 pM dissolved La
-(and other REEs), which would confound the La=0 and La=10 pM conditions. Defined ASW
-ensures the zero-La controls are truly zero. Use ACS-grade or higher purity salts to
-minimize trace REE contamination.
+| **Added** | **To add** | **Substrate** | **MW** | **Long Name** | **Location** |
+| :--: | :--: | :-- | :--: | :-- | :-- |
+| | 0.3714 g | LaCl3-7H2O | 371.37 | Lanthanum chloride heptahydrate | Chem Cabinet |
+| | ~8 mL | dH2O | -- | -- | -- |
+| | to pH 2-3 | 1 M HCl | 36.46 | Hydrochloric acid | Acid Cabinet |
+| | to 10 mL | dH2O | -- | -- | -- |
 
-#### 5× Artificial Seawater Concentrates
+1. Dissolve LaCl3-7H2O in ~8 mL dH2O
+1. Add 1 M HCl dropwise to pH 2-3 (prevents hydrolysis)
+1. Bring to 10 mL with dH2O
+1. Filter sterilize (0.2 um) into polypropylene tube -- NOT glass (wall adsorption)
+1. Store at 4 C
 
-Prepare Solutions 1 and 2 **separately** — Ca²⁺ (Soln 2) precipitates as CaSO₄/CaCO₃
-if mixed with sulfate/bicarbonate (Soln 1) at 5× concentration. They are combined only
-at the time of final medium assembly (diluted to 1×).
+#### La-2 and La-3: serial dilution working stocks
 
-**Solution 1 — Anions + monovalent cations (5× concentrate, 1 L)**
+Prepare in pH 3 dH2O (acidify dH2O with 1 M HCl before use). Use polypropylene tubes. Filter sterilize each dilution.
 
-Use a funnel for adding salts. Dissolve NaCl and Na₂SO₄ directly in bottle. Dissolve
-remaining salts individually in 30 mL dH₂O each, then add to bottle. Bring to 1 L.
-Shake well. Autoclave.
+| **Added** | **Stock ID** | **Concentration** | **Preparation** |
+| :--: | :-- | :--: | :-- |
+| | La-2 | 100 uM | 10 uL La-1 into 10 mL pH 3 dH2O (1000x dilution) |
+| | La-3 | 100 nM | 10 uL La-2 into 10 mL pH 3 dH2O (1000x dilution) |
 
-| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **5× (g/L)** | **For 1 L of 5× (g)** |
-| :-- | :-- | :--: | :--: | :--: | :--: |
-| Sodium chloride | NaCl | 58.44 | 362.5 mM | 105.95 | 105.95 |
-| Sodium sulfate | Na₂SO₄ | 142.04 | 25.0 mM | 17.75 | 17.75 |
-| Potassium chloride | KCl | 74.55 | 8.03 mM | 2.995 | 2.995 |
-| Potassium bromide | KBr | 119.00 | 724 µM | 0.431 | 0.431 |
-| Boric acid | H₃BO₃ | 61.83 | 370 µM | 0.1145 | 0.1145 |
-| Sodium fluoride | NaF | 41.99 | 65.5 µM | 0.01375 | 0.01375 |
-| Sodium bicarbonate | NaHCO₃ | 84.01 | 2.07 mM | 0.8675 | 0.8675 |
+WARNING: Make La-2 and La-3 fresh immediately before use. Wall adsorption is significant at nM/pM concentrations.
 
-**Solution 2 — Divalent cations + L1 nutrient stocks (5× concentrate, 1 L)**
+#### La addition to 1 L agar batches
 
-Dissolve MgCl₂·6H₂O and CaCl₂·2H₂O directly in bottle. Add SrCl₂·6H₂O.
-Then add L1 nutrient stocks (from Bigelow L1 kit or prepared stocks) at 5× volumes.
-Bring to 1 L. Shake well. Autoclave.
+All additions are 100 uL per 1 L. Vehicle control gets same volume of acidified water.
 
-| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **5× (g/L)** | **For 1 L of 5× (g)** |
-| :-- | :-- | :--: | :--: | :--: | :--: |
-| Magnesium chloride hexahydrate | MgCl₂·6H₂O | 203.30 | 47.2 mM | 47.96 | 47.96 |
-| Calcium chloride dihydrate | CaCl₂·2H₂O | 147.01 | 9.14 mM | 6.72 | 6.72 |
-| Strontium chloride hexahydrate | SrCl₂·6H₂O | 266.62 | 82.1 µM | 0.1095 | 0.1095 |
+| **Added** | **Target [La]** | **Stock** | **Vol per 1 L** |
+| :--: | :--: | :-- | :--: |
+| | 10 uM | La-1 (100 mM) | 100 uL |
+| | 10 nM | La-2 (100 uM) | 100 uL |
+| | 10 pM | La-3 (100 nM) | 100 uL |
+| | 0 (vehicle) | pH 3 dH2O | 100 uL |
 
-| **L1 nutrient stock** | **Stock conc.** | **Target 1× conc.** | **5× vol/L (mL)** | **For 1 L of 5× (mL)** |
-| :-- | :-- | :--: | :--: | :--: |
-| NaNO₃ | 75.00 g/L (882 mM) | 882 µM | 5 | 5 |
-| NaH₂PO₄·H₂O | 5.00 g/L (36.2 mM) | 36.2 µM | 5 | 5 |
-| Na₂SiO₃·9H₂O (optional) | 30.00 g/L (106 mM) | 106 µM | 5 | 5 |
+NOTE: L1 medium contains 36.2 uM phosphate. At 10 uM La, the system is ~10^9 x supersaturated for LaPO4 and partial precipitation is expected (white haze). Phosphate is in excess, so most La will precipitate. This is consistent with published methylotrophy protocols using 2-30 uM La in phosphate media -- colloidal LaPO4 trapped in agar appears to remain bioavailable. The 10 pM and 10 nM conditions are well below the precipitation threshold.
 
-Na₂SiO₃ is only required for diatoms/siliceous phytoplankton — not needed for bacterial
-targets, but included to match standard L1 and avoid excluding silicate-requiring organisms.
+#### 1 M Methanol working stock (100 mL)
 
-**Shelf life:** 5× concentrates are stable at room temperature for months. Check for
-precipitate before use — if cloudy, discard and remake.
+| **Added** | **To add** | **Substrate** | **MW** | **Long Name** | **Location** |
+| :--: | :--: | :-- | :--: | :-- | :-- |
+| | 4.05 mL | Neat MeOH | 32.04 | Methanol (24.72 M neat) | Flammable Cabinet |
+| | 95.95 mL | dH2O | -- | -- | -- |
 
-**Scale for this protocol:** 7 L total L1 base (4 L agar + 3 L liquid) needs 700 mL
-of each 5× solution. 1 L prep gives excess for future use.
+1. Add MeOH to dH2O in fume hood (not reverse)
+1. Filter sterilize (0.2 um)
+1. Store at 4 C in sealed container
 
-#### L1 Medium Assembly (per 1 L)
+#### MeOH addition to 330 mL agar aliquots
 
-| **Component** | **Volume** | **Notes** |
-| :-- | :--: | :-- |
-| 5× ASW Solution 1 | 100 mL | Anions + monovalent cations |
-| 5× ASW Solution 2 | 100 mL | Divalent cations + N, P, Si |
-| L1 trace element solution | 1 mL | See below |
-| f/2 vitamin solution | 0.5 mL | See below — MAKE FRESH |
-| dH₂O | to 1 L | ~798.5 mL |
-| Agar (for plates only) | 15 g | Add before autoclaving |
-
-Combine ASW solutions and dH₂O first, then add trace elements and vitamins. Add agar
-for plate batches. Autoclave (121°C, 15 min). Final pH 8.0–8.2.
-
-**For 7 L (this protocol):** multiply all volumes by 7 (700 mL each ASW solution,
-7 mL trace elements, 3.5 mL vitamins, dH₂O to volume). Split before autoclaving:
-- **4 L portion** → add 60 g agar → autoclave in 4 × 1 L bottles → plates
-- **3 L portion** → no agar → autoclave → liquid media
-
-**Note on Ca²⁺:** Final Ca²⁺ is 9.14 mM (from CaCl₂·2H₂O), which competes with La³⁺
-for carboxyl binding sites on cell surfaces. This is the realistic marine condition. For
-higher La bioavailability in future experiments, Ca²⁺ can be reduced (see Oliva et al. 2024).
-
-**Note on phosphate and La precipitation:** L1 contains 36.2 µM phosphate, which will
-precipitate some La³⁺ as insoluble LaPO₄. At 10 µM La and pH 8, expect partial loss.
-A white haze in La=10µM plates is normal. The 10 pM and 10 nM conditions are below the
-precipitation threshold and remain fully soluble.
-
-#### L1 Trace Element Solution
-
-To 950 mL dH₂O, add components **in this order:**
-
-1. Na₂EDTA·2H₂O — 4.36 g. Stir until dissolved.
-2. Adjust pH to 8.0–8.4 with NaOH.
-3. FeCl₃·6H₂O — 3.15 g. Stir until fully dissolved (solution turns yellow).
-4. Add remaining components:
-
-| Component | Stock Solution | Quantity | Final Conc. in Medium |
-| :-- | :-- | :--: | :-- |
-| Na₂EDTA·2H₂O | --- | 4.36 g | 1.17 × 10⁻⁵ M |
-| FeCl₃·6H₂O | --- | 3.15 g | 1.17 × 10⁻⁵ M |
-| MnCl₂·4H₂O | 178.10 g/L dH₂O (900 mM) | 1 mL | 9.00 × 10⁻⁷ M |
-| ZnSO₄·7H₂O | 23.00 g/L dH₂O (80.0 mM) | 1 mL | 8.00 × 10⁻⁸ M |
-| CoCl₂·6H₂O | 11.90 g/L dH₂O (50.0 mM) | 1 mL | 5.00 × 10⁻⁸ M |
-| CuSO₄·5H₂O | 2.50 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
-| Na₂MoO₄·2H₂O | 19.9 g/L dH₂O (82.2 mM) | 1 mL | 8.22 × 10⁻⁸ M |
-| H₂SeO₃ | 1.29 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
-| NiSO₄·6H₂O | 2.63 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
-| Na₃VO₄ | 1.84 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
-| K₂CrO₄ | 1.94 g/L dH₂O (10.0 mM) | 1 mL | 1.00 × 10⁻⁸ M |
-
-5. Bring to 1 L. Autoclave. Store at 4°C.
-
-#### f/2 Vitamin Solution — MAKE FRESH
-
-WARNING: Previous stocks were removed from refrigeration and are likely degraded (especially thiamine). Prepare new from powder.
-
-Biotin primary stock: 0.1 g/L dH₂O (0.409 mM). B₁₂ primary stock: 1.0 g/L dH₂O (0.738 mM, wrap in foil).
-
-1. Begin with 950 mL dH₂O
-2. Dissolve 200 mg thiamine·HCl directly
-3. Add 10 mL biotin stock
-4. Add 1 mL B₁₂ stock
-5. Bring to 1 L. Autoclave or filter-sterilize. Aliquot into foil-wrapped tubes. Store at -20°C.
-
-| Component | Primary Stock | Quantity | Final Conc. in Medium |
-| :-- | :-- | :--: | :-- |
-| Thiamine·HCl (B₁) | --- (200 mg/L = 0.593 mM) | 200 mg | 2.96 × 10⁻⁷ M |
-| Biotin (H) | 0.1 g/L dH₂O (0.409 mM) | 10 mL | 2.05 × 10⁻⁹ M |
-| Cyanocobalamin (B₁₂) | 1.0 g/L dH₂O (0.738 mM) | 1 mL | 3.69 × 10⁻¹⁰ M |
-
-#### Lanthanum Stock Solutions — FILTER-STERILIZE, DO NOT AUTOCLAVE
-
-**Primary stock (La-1): 10 mM LaCl₃** — 0.03715 g LaCl₃·7H₂O in 10 mL dH₂O, pH 2–3 with 1M HCl, 0.2 µm filter-sterilize into polypropylene tube.
-
-**Working stocks by serial dilution (in pH 3 dH₂O, polypropylene tubes):**
-
-| Stock ID | Concentration | Preparation |
-| :-- | :-- | :-- |
-| La-1 | 10 mM | Primary stock |
-| La-2 | 10 µM | 10 µL La-1 into 10 mL pH 3 dH₂O, filter-sterilize |
-| La-3 | 10 nM | 10 µL La-2 into 10 mL pH 3 dH₂O, filter-sterilize |
-
-**Per 100 mL agar:** add 100 µL of appropriate stock (or 100 µL pH 3 dH₂O for La=0 vehicle control).
-
-| Target [La] | Stock | Vol per 100 mL |
-| :-- | :-- | :--: |
-| 10 µM | La-1 (10 mM) | 100 µL |
-| 10 nM | La-2 (10 µM) | 100 µL |
-| 10 pM | La-3 (10 nM) | 100 µL |
-| 0 | pH 3 dH₂O | 100 µL |
-
-**Critical:** Make La-2 and La-3 fresh immediately before use. Wall adsorption is significant at pM/nM.
-
-#### Methanol Solutions — DO NOT AUTOCLAVE
-
-Neat MeOH: 0.792 g/mL, MW 32.04 → 24.72 M.
-**1 M MeOH working stock:** 4.05 mL neat MeOH in 95.95 mL dH₂O.
-
-| Target [MeOH] | Stock | Vol per 100 mL agar |
-| :-- | :-- | :--: |
-| 100 mM (0.4% v/v) | Neat MeOH | 405 µL |
-| 1 mM (0.004% v/v) | 1 M MeOH stock | 100 µL |
-| 0 | dH₂O | 100 µL |
-
-Add to agar cooled to ~50°C. Pour immediately.
-
-#### Plates — 4×3 Factorial Design
-
-|  | **MeOH = 0** | **MeOH = 1 mM** (0.004%) | **MeOH = 100 mM** (0.4%) |
-| :-- | :--: | :--: | :--: |
-| **La = 0** | 1 | 2 | 3 |
-| **La = 10 pM** | 4 | 5 | 6 |
-| **La = 10 nM** | 7 | 8 | 9 |
-| **La = 10 µM** | 10 | 11 | 12 |
-
-10 plates per condition × 12 conditions = **120 plates**.
-Prepare **4 L** L1 agar base (120 × 25 mL = 3.0 L; extra left on bench).
-
-#### Liquid Media
-
-~250 mL per condition × 12 conditions = **3 L** liquid L1 (no agar).
-Dispense into twelve 250 mL aliquots post-autoclave, add La and MeOH to each.
+| **Added** | **Target [MeOH]** | **Stock** | **Vol per 330 mL** |
+| :--: | :--: | :-- | :--: |
+| | 10 mM | 1 M MeOH stock | 3.30 mL |
+| | 1 mM | 1 M MeOH stock | 330 uL |
+| | 0 (vehicle) | dH2O | 330 uL |
 
 ### Organisms
 
-|**Organism**| **Strain** | **Provenance** | **Shorthand** | **Location** |
-| :--: | :--: |:--:| :--:|:--:|
-| Concentrated seawater | N/A | KML collection site (TBD) | SW | -80°C / fresh |
+| **Organism** | **Strain** | **Provenance** | **Shorthand** | **Location** |
+| :--: | :--: | :--: | :--: | :--: |
+| Concentrated seawater | N/A | KML collection site (TBD) | SW | -80 C / fresh |
 
 ### Consumables
 
-| **Item** |**Count** | **Located In Lab** | **Ordering Information** |
-| :--: | :--: |:--: |:--:|
-| Polystyrene petri dishes (100 mm) | 130 | | 120 + spares |
-| Sterile bottles (250–500 mL, PP or glass) | 12 | | Liquid media aliquots, 1 per condition |
-| 0.2 µm syringe filters | 6 | | La and MeOH stocks |
+| **Item** | **Count** | **Located In Lab** | **Ordering Information** |
+| :--: | :--: | :--: | :--: |
+| Polystyrene petri dishes (100 mm) | 80 | | 72 + spares |
+| 0.2 um syringe filters | 6 | | La and MeOH stocks |
 | 10 mL syringes | 6 | | |
-| Polypropylene tubes (15 mL) | 10 | | La stock — NOT glass |
+| Polypropylene tubes (15 mL) | 10 | | La stocks -- NOT glass |
 | Polypropylene tubes (50 mL) | 4 | | Serial dilutions |
+| 500 mL bottles or flasks | 12 | | 330 mL agar aliquots |
+| 1 L bottles or flasks | 4 | | La addition batches |
 | Parafilm | 1 roll | | |
 | Ziplock bags (gallon) | 12 | | Bag by condition |
-| Sterile inoculation loops | 1 box | | For streaking plates |
+| Sterile spreaders or glass beads | 80 | | |
 
 ### Reusables
 
 | **Item** | **Count** | **Located In Lab** | **Cleaning Notes** |
-| :--: | :--: | :--: |:--:|
-| Autoclavable bottles/carboys (4 L) | 2 | | For autoclaving agar and liquid base batches |
+| :--: | :--: | :--: | :--: |
+| Water bath container | 1 | | For 50 C agar cooling |
 
 ### Equipment
 
 | **Instrument** | **Standards/Calibration** | **Docs** |
-| :--: | :--: |:--:|
-| Autoclave | 121°C / 15 psi / 15 min | |
-| Incubator (static) | 15–20°C (match source water) | |
+| :--: | :--: | :--: |
+| Incubator (static) | 15-20 C (match source water) | |
 | Laminar flow hood / BSC | | |
-| Water bath at 50°C | | Agar cooling |
+| Water bath at 50 C | | Agar cooling/melting |
 | Micropipettes (P10, P100, P1000) | | |
 | pH meter or strips | | La stock verification |
 | Vacuum filtration | | Concentrating inoculum |
 
 ### Chemicals
 
-**ASW salts (5× Solution 1 — anions + monovalent cations)**
+| **Chemical** | **Formula** | **MW (g/mol)** | **Safety Concerns** | **PPE** | **Disposal** | **Location** |
+| :-- | :--: | :--: | :-- | :-- | :-- | :-- |
+| Lanthanum chloride heptahydrate | LaCl3-7H2O | 371.37 | Irritant | Gloves, goggles | Heavy metal waste | Chem Cabinet |
+| Methanol | CH3OH | 32.04 | Flammable, toxic; flash pt 11 C | Gloves, goggles, fume hood | Organic solvent waste | Flammable Cabinet |
+| Hydrochloric acid (1 M) | HCl | 36.46 | Corrosive | Gloves, goggles | Neutralize, drain | Acid Cabinet |
 
-| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :--: | :-- | :-- | :-- |
-| Sodium chloride | NaCl | 58.44 | 362.5 mM | None | Standard | Drain |
-| Sodium sulfate | Na₂SO₄ | 142.04 | 25.0 mM | None | Standard | Drain |
-| Potassium chloride | KCl | 74.55 | 8.03 mM | None | Standard | Drain |
-| Potassium bromide | KBr | 119.00 | 724 µM | None | Standard | Drain |
-| Boric acid | H₃BO₃ | 61.83 | 370 µM | Reproductive toxin at high dose | Gloves | Drain (dilute) |
-| Sodium fluoride | NaF | 41.99 | 65.5 µM | Toxic if ingested | Gloves, goggles | Chemical waste |
-| Sodium bicarbonate | NaHCO₃ | 84.01 | 2.07 mM | None | Standard | Drain |
+#### Plates — 4×3 Factorial Design
 
-**ASW salts (5× Solution 2 — divalent cations)**
+|  | **MeOH = 0** | **MeOH = 1 mM** | **MeOH = 10 mM** |
+| :-- | :--: | :--: | :--: |
+| **La = 0** | 1 | 2 | 3 |
+| **La = 10 pM** | 4 | 5 | 6 |
+| **La = 10 nM** | 7 | 8 | 9 |
+| **La = 10 µM** | 10 | 11 | 12 |
 
-| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :--: | :-- | :-- | :-- |
-| Magnesium chloride hexahydrate | MgCl₂·6H₂O | 203.30 | 47.2 mM | Irritant | Gloves | Drain |
-| Calcium chloride dihydrate | CaCl₂·2H₂O | 147.01 | 9.14 mM | Irritant; exothermic on dissolving | Gloves | Drain |
-| Strontium chloride hexahydrate | SrCl₂·6H₂O | 266.62 | 82.1 µM | Irritant | Gloves | Chemical waste |
+3 reps x 12 conditions x 2 dilutions = **72 plates**
 
-**L1 nutrients (added to 5× Solution 2 from stock bottles)**
+Starting material: **4 L** autoclaved L1 agar base.
 
-| **Chemical** | **Formula** | **MW (g/mol)** | **Stock bottle conc.** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :--: | :--: | :-- | :-- | :-- |
-| Sodium nitrate | NaNO₃ | 85.00 | 882 mM (75.0 g/L) | 882 µM | Oxidizer | Gloves | Drain |
-| Sodium dihydrogen phosphate monohydrate | NaH₂PO₄·H₂O | 137.99 | 36.2 mM (5.00 g/L) | 36.2 µM | None | Standard | Drain |
-| Sodium metasilicate nonahydrate (optional) | Na₂SiO₃·9H₂O | 284.20 | 106 mM (30.0 g/L) | 106 µM | Irritant | Gloves | Drain |
+### Workflow Summary
 
-**L1 trace elements (1 mL/L of trace element solution)**
-
-| **Chemical** | **Formula** | **MW (g/mol)** | **Stock conc.** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :--: | :--: | :-- | :-- | :-- |
-| Na₂EDTA dihydrate | Na₂EDTA·2H₂O | 372.24 | 11.7 mM (4.36 g/L) | 11.7 µM | Irritant | Gloves | Drain |
-| Ferric chloride hexahydrate | FeCl₃·6H₂O | 270.30 | 11.7 mM (3.15 g/L) | 11.7 µM | Irritant, stains | Gloves, goggles | Chemical waste |
-| Manganese chloride tetrahydrate | MnCl₂·4H₂O | 197.91 | 900 mM (178.1 g/L) | 900 nM | Irritant | Gloves | Chemical waste |
-| Zinc sulfate heptahydrate | ZnSO₄·7H₂O | 287.56 | 80.0 mM (23.0 g/L) | 80.0 nM | Irritant | Gloves | Chemical waste |
-| Cobalt chloride hexahydrate | CoCl₂·6H₂O | 237.93 | 50.0 mM (11.9 g/L) | 50.0 nM | Carcinogen (Cat 1B) | Gloves, goggles, hood | Chemical waste |
-| Cupric sulfate pentahydrate | CuSO₄·5H₂O | 249.69 | 10.0 mM (2.50 g/L) | 10.0 nM | Irritant, aquatic toxic | Gloves | Chemical waste |
-| Sodium molybdate dihydrate | Na₂MoO₄·2H₂O | 241.95 | 82.2 mM (19.9 g/L) | 82.2 nM | Irritant | Gloves | Chemical waste |
-| Selenious acid | H₂SeO₃ | 128.97 | 10.0 mM (1.29 g/L) | 10.0 nM | Toxic | Gloves, goggles, hood | Chemical waste |
-| Nickel sulfate hexahydrate | NiSO₄·6H₂O | 262.85 | 10.0 mM (2.63 g/L) | 10.0 nM | Carcinogen (Cat 1A) | Gloves, goggles, hood | Chemical waste |
-| Sodium orthovanadate | Na₃VO₄ | 183.94 | 10.0 mM (1.84 g/L) | 10.0 nM | Toxic | Gloves, goggles | Chemical waste |
-| Potassium chromate | K₂CrO₄ | 194.19 | 10.0 mM (1.94 g/L) | 10.0 nM | Carcinogen (Cat 1B), oxidizer | Gloves, goggles, hood | Chemical waste |
-
-**f/2 vitamins (0.5 mL/L of vitamin solution — MAKE FRESH)**
-
-| **Chemical** | **Formula** | **MW (g/mol)** | **Stock conc.** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :--: | :--: | :-- | :-- | :-- |
-| Thiamine hydrochloride (B₁) | C₁₂H₁₇ClN₄OS·HCl | 337.27 | 593 µM (200 mg/L) | 296 nM | None | Standard | Drain |
-| Biotin (H) | C₁₀H₁₆N₂O₃S | 244.31 | 4.09 µM (1.0 mg/L) | 2.05 nM | None | Standard | Drain |
-| Cyanocobalamin (B₁₂) | C₆₃H₈₈CoN₁₄O₁₄P | 1355.37 | 0.738 µM (1.0 mg/L) | 0.369 nM | None | Standard | Drain |
-
-**Experimental variables**
-
-| **Chemical** | **Formula** | **MW (g/mol)** | **Target 1× conc.** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :--: | :-- | :-- | :-- |
-| Lanthanum chloride heptahydrate | LaCl₃·7H₂O | 371.37 | 0 / 10 pM / 10 nM / 10 µM | Irritant | Gloves, goggles | Heavy metal waste |
-| Methanol | CH₃OH | 32.04 | 0 / 1 mM / 100 mM | Flammable, toxic; flash pt 11°C | Gloves, goggles, fume hood | Organic solvent waste |
-
-**Other reagents**
-
-| **Chemical** | **Formula** | **MW (g/mol)** | **Purpose** | **Safety** | **PPE** | **Disposal** |
-| :-- | :-- | :--: | :-- | :-- | :-- | :-- |
-| Hydrochloric acid (1 M) | HCl | 36.46 | La stock pH adjustment | Corrosive | Gloves, goggles | Acid waste |
-| Agar (bacteriological) | — | — | Solidifying agent (15 g/L) | None | Standard | Autoclave waste |
+```
+4 L L1 agar (melted, 50 C)
+    |
+    +-- 1 L + 100 uL pH 3 dH2O ---------> La = 0
+    |       +-- 330 mL + 330 uL dH2O ----------> Cond 1 (La=0, MeOH=0)
+    |       +-- 330 mL + 330 uL 1M MeOH -------> Cond 2 (La=0, MeOH=1mM)
+    |       +-- 330 mL + 3.30 mL 1M MeOH ------> Cond 3 (La=0, MeOH=10mM)
+    |
+    +-- 1 L + 100 uL La-3 (100 nM) -----> La = 10 pM
+    |       +-- 330 mL + ... ----------------> Cond 4, 5, 6
+    |
+    +-- 1 L + 100 uL La-2 (100 uM) -----> La = 10 nM
+    |       +-- 330 mL + ... ----------------> Cond 7, 8, 9
+    |
+    +-- 1 L + 100 uL La-1 (100 mM) -----> La = 10 uM
+            +-- 330 mL + ... ----------------> Cond 10, 11, 12
+```
 
 ## Culture Conditions
 - **Temperature:** Match source water (15–20°C)
@@ -350,11 +211,14 @@ Dispense into twelve 250 mL aliquots post-autoclave, add La and MeOH to each.
 
 Label on plate **BOTTOM**. Format: `L1-La[conc]-M[conc]-R[rep]-D[dilution]  [date]`
 
-Examples: `L1-La0-M0-R1-Dneat  02/25/26` · `L1-La10pM-M1mM-R2-D-2  02/25/26` · `L1-La10uM-M100mM-R3-Dneat  02/25/26`
+Examples: `L1-La0-M0-R1-Dneat  02/26/26` | `L1-La10pM-M1mM-R2-D-2  02/26/26` | `L1-La10uM-M10mM-R3-Dneat  02/26/26`
 
 ## Experimental Protocol
 
 ### Prep
+1. Confirm La and MeOH stocks are prepared (see Media sections above)
+1. Record stock dates in Notes and Observations
+1. Prepare pH 3 dH2O: add 1 M HCl dropwise to dH2O until pH 3
 
 #### Inoculum
 1. Collect 1–5 L seawater. Record GPS, date, temperature, salinity.
@@ -362,45 +226,69 @@ Examples: `L1-La0-M0-R1-Dneat  02/25/26` · `L1-La10pM-M1mM-R2-D-2  02/25/26` ·
 3. Concentrate: vacuum-filter 500 mL onto 0.2 µm membrane, resuspend in 5 mL sterile seawater.
 4. Dilutions: neat concentrate + 10⁻².
 
-#### Standards
-Optional positive control: M. extorquens AM1 (ATCC 14718)
+### Inoculum Preparation
+1. Collect 1-5 L seawater. Record GPS, date, temperature, salinity.
+1. Filter 0.2 um Sterivex for eDNA archive.
+1. Concentrate: vacuum-filter 500 mL onto 0.2 um membrane, resuspend in 5 mL sterile seawater.
+1. Dilutions: neat concentrate + 10^-2.
 
-#### Controls
-- Positive: L1 control plates with inoculum (standard heterotroph growth)
-- Negative: Uninoculated plates (sterility check, optional 1 per condition)
-- Vehicle: La=0 gets pH 3 dH₂O; MeOH=0 gets plain dH₂O
+### Plate Pouring
 
-### Protocol
+**Step 1: Melt and equilibrate agar**
+1. Melt 4 L autoclaved L1 agar base in water bath or microwave
+1. Equilibrate to 50 C in water bath (agar solidifies ~42 C -- do not let cool below 45 C)
 
-1. Autoclave 4 L L1 agar base. Cool to 50°C.
-2. Dispense 12 batches × 275 mL. Add La and MeOH per batch table.
+**Step 2: Add La to 1 L batches**
 
-**Batch table (275 mL each = 10 plates + dead volume):**
+Work in this order: La=0 first, then La=10 pM, La=10 nM, La=10 uM (low to high).
 
-| Batch | Condition | La stock | La vol | MeOH stock | MeOH vol |
-| :--: | :-- | :-- | :--: | :-- | :--: |
-| 1 | La=0, MeOH=0 | pH 3 dH₂O | 275 µL | dH₂O | 275 µL |
-| 2 | La=0, MeOH=1mM | pH 3 dH₂O | 275 µL | 1 M MeOH | 275 µL |
-| 3 | La=0, MeOH=100mM | pH 3 dH₂O | 275 µL | Neat MeOH | 1.11 mL |
-| 4 | La=10pM, MeOH=0 | La-3 (10 nM) | 275 µL | dH₂O | 275 µL |
-| 5 | La=10pM, MeOH=1mM | La-3 (10 nM) | 275 µL | 1 M MeOH | 275 µL |
-| 6 | La=10pM, MeOH=100mM | La-3 (10 nM) | 275 µL | Neat MeOH | 1.11 mL |
-| 7 | La=10nM, MeOH=0 | La-2 (10 µM) | 275 µL | dH₂O | 275 µL |
-| 8 | La=10nM, MeOH=1mM | La-2 (10 µM) | 275 µL | 1 M MeOH | 275 µL |
-| 9 | La=10nM, MeOH=100mM | La-2 (10 µM) | 275 µL | Neat MeOH | 1.11 mL |
-| 10 | La=10µM, MeOH=0 | La-1 (10 mM) | 275 µL | dH₂O | 275 µL |
-| 11 | La=10µM, MeOH=1mM | La-1 (10 mM) | 275 µL | 1 M MeOH | 275 µL |
-| 12 | La=10µM, MeOH=100mM | La-1 (10 mM) | 275 µL | Neat MeOH | 1.11 mL |
+| **Added** | **Batch** | **La stock** | **Vol into 1 L** |
+| :--: | :-- | :-- | :--: |
+| | La = 0 | pH 3 dH2O | 100 uL |
+| | La = 10 pM | La-3 (100 nM) | 100 uL |
+| | La = 10 nM | La-2 (100 uM) | 100 uL |
+| | La = 10 uM | La-1 (100 mM) | 100 uL |
 
-3. **Pour in order:** MeOH=0 batches first (1,4,7,10), then MeOH=1mM (2,5,8,11), then MeOH=100mM (3,6,9,12). Prevents vapor cross-contamination.
-4. Parafilm each plate immediately. Bag by condition.
-5. Inoculate: 100 µL per plate.
-6. Incubate inverted. **MeOH-free bags separate from MeOH bags.**
-7. For MeOH bags: include open tube of 0.5% MeOH to maintain vapor pressure.
-8. Observe per schedule below. Photograph with ruler at each timepoint.
-9. Pick morphologically distinct colonies — prioritize taxa unique to La+ and/or MeOH+ plates.
+Swirl gently after each addition. Immediately proceed to Step 3.
 
-#### Liquid Media Preparation
+**Step 3: Split each 1 L into 3 x ~330 mL and add MeOH**
+
+Work within each La batch: pour MeOH=0 first, then MeOH=1 mM, then MeOH=10 mM (low to high, prevents vapor contamination).
+
+| **Added** | **Cond** | **La batch** | **MeOH stock** | **MeOH vol into 330 mL** |
+| :--: | :-- | :-- | :-- | :--: |
+| | 1: La=0, MeOH=0 | La = 0 | dH2O | 330 uL |
+| | 2: La=0, MeOH=1mM | La = 0 | 1 M MeOH | 330 uL |
+| | 3: La=0, MeOH=10mM | La = 0 | 1 M MeOH | 3.30 mL |
+| | 4: La=10pM, MeOH=0 | La = 10 pM | dH2O | 330 uL |
+| | 5: La=10pM, MeOH=1mM | La = 10 pM | 1 M MeOH | 330 uL |
+| | 6: La=10pM, MeOH=10mM | La = 10 pM | 1 M MeOH | 3.30 mL |
+| | 7: La=10nM, MeOH=0 | La = 10 nM | dH2O | 330 uL |
+| | 8: La=10nM, MeOH=1mM | La = 10 nM | 1 M MeOH | 330 uL |
+| | 9: La=10nM, MeOH=10mM | La = 10 nM | 1 M MeOH | 3.30 mL |
+| | 10: La=10uM, MeOH=0 | La = 10 uM | dH2O | 330 uL |
+| | 11: La=10uM, MeOH=1mM | La = 10 uM | 1 M MeOH | 330 uL |
+| | 12: La=10uM, MeOH=10mM | La = 10 uM | 1 M MeOH | 3.30 mL |
+
+**Step 4: Pour plates**
+1. Swirl gently after MeOH addition
+1. Pour ~25 mL per plate (330 mL = ~13 plates per condition)
+1. Pour 6 plates per condition (3 reps x 2 dilutions) + spares
+1. Parafilm each plate immediately. Bag by condition.
+
+### Inoculation
+1. Inoculate: 100 uL per plate. Use sterile spreaders/beads.
+1. Incubate inverted. **MeOH-free bags separate from MeOH bags.**
+
+### Observation
+1. Observe per calendar below. Photograph with ruler at each timepoint.
+1. Pick morphologically distinct colonies -- prioritize taxa unique to La+ and/or MeOH+ plates.
+
+### Cleanup
+- Methanol waste: organic solvent waste
+- La-containing media: heavy metal waste (confirm with EHS; concentrations very low)
+
+## Colony Picking and 16S to Genome Workflow
 
 10. Autoclave 3 L L1 liquid base (no agar). Cool to room temperature.
 11. Dispense into 12 × 250 mL aliquots in sterile bottles or polypropylene flasks.
@@ -429,9 +317,9 @@ Optional positive control: M. extorquens AM1 (ATCC 14718)
 ### Colony Picking & 16S → Genome Workflow
 Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
 1. Pick distinct colonies, streak for isolation on same medium type
-2. Colony PCR with 27F/1492R
-3. Sanger sequencing → BLAST
-4. If <97% identity or absent from L1 controls → gDNA extraction → Illumina WGS
+1. Colony PCR with 27F/1492R
+1. Sanger sequencing, BLAST
+1. If less than 97% identity or absent from L1 controls: gDNA extraction, Illumina WGS
 
 ### Key Comparisons
 
@@ -445,22 +333,15 @@ Follow Swabs to Genomes (Dunitz et al. 2015, PeerJ 3:e960):
 | Conditions 3, 6, 9, 12 | La dose-response at constant high MeOH |
 | Conditions 10, 11, 12 | MeOH dose-response at constant high La |
 
-### Cleanup
-- Methanol waste → organic solvent waste
-- La-containing media → heavy metal waste (confirm with EHS; concentrations very low)
-
 ## Calendar
 
 | Week | Activity |
 | :--: | :-- |
-| -1 | Prepare 5× ASW (1 L each solution). Fresh vitamin stocks. La serial dilutions. MeOH working stock. Trace elements. Autoclave 4 L agar base + 3 L liquid base. |
-| 0 | Pour 120 plates. Dispense 12 × 250 mL liquid aliquots. Add La/MeOH to all. Collect inoculum. Inoculate. |
-| 1–2 | Daily plate checks. Photograph day 3, 7, 14. |
-| 2–4 | Pick colonies, streak for isolation, 16S PCR. |
-| 4–8 | Extended incubation (2×/week). Additional picks. |
-| 6–10 | Sanger sequencing, BLAST, select genome candidates. |
-| 10–14 | gDNA extraction, library prep, sequencing. |
-| 14–18 | Assembly, annotation, genome announcement draft. |
-
-## Data analysis
-![](output/)
+| -1 | La serial dilutions. MeOH working stock. Confirm 4 L L1 agar base ready. |
+| 0 | Collect inoculum. Melt agar, add La/MeOH, pour 72 plates. Inoculate. |
+| 1-2 | Daily plate checks. Photograph day 3, 7, 14. |
+| 2-4 | Pick colonies, streak for isolation, 16S PCR. |
+| 4-8 | Extended incubation (2x/week). Additional picks. |
+| 6-10 | Sanger sequencing, BLAST, select genome candidates. |
+| 10-14 | gDNA extraction, library prep, sequencing. |
+| 14-18 | Assembly, annotation, genome announcement draft. |
