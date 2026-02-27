@@ -118,17 +118,17 @@ Neat MeOH: 0.792 g/mL, MW 32.04 = 24.72 M.
 1. Filter sterilize (0.2 um)
 1. Store at 4 C in sealed container
 
-#### MeOH addition to ~333 mL agar portions
+#### MeOH addition to ~330 mL agar portions
 
-Split each 1 L La-amended bottle into 3 portions of ~333 mL in pre-labeled 500 mL vessels. Add MeOH (or vehicle) and swirl to mix.
+Split each 1 L La-amended bottle into 3 portions of ~330 mL in pre-labeled 500 mL vessels. Add MeOH (or vehicle) and swirl to mix.
 
-| **Added** | **Portion** | **Target [MeOH]** | **Stock** | **Vol per 333 mL** | **Long Name** |
+| **Added** | **Portion** | **Target [MeOH]** | **Stock** | **Vol per 330 mL** | **Long Name** |
 | :--: | :--: | :--: | :-- | :--: | :-- |
-| | A | 0 | dH2O | 3.33 mL | Vehicle control |
-| | B | 1 mM | 1 M MeOH | 333 uL + 3.00 mL dH2O | Low C1 supplement |
-| | C | 10 mM | 1 M MeOH | 3.33 mL | High C1 supplement |
+| | A | 0 | dH2O | 1.335 mL | Vehicle control |
+| | B | 1 mM | 1 M MeOH | 330 uL + 1.005 mL dH2O | Low C1 supplement |
+| | C | 100 mM | Neat MeOH | 1.335 mL | High C1 supplement |
 
-Vehicle and 1 mM portions receive dH2O to match the 3.33 mL total addition volume of the 10 mM condition.
+Vehicle and 1 mM portions receive dH2O to match the 1.335 mL total addition volume of the 100 mM condition. The 100 mM condition uses neat MeOH (24.72 M) because using 1 M stock would require 33 mL (10% volume change, unacceptable dilution of agar).
 
 Add to agar cooled to ~50 C. Pour plates immediately -- MeOH evaporates at elevated temperature.
 
@@ -150,7 +150,7 @@ Add to agar cooled to ~50 C. Pour plates immediately -- MeOH evaporates at eleva
 | Parafilm | 1 roll | | |
 | Ziplock bags (gallon) | 12 | | Bag by condition |
 | Sterile spreaders or glass beads | 80 | | |
-| Glass bottles or flasks (500 mL) | 12 | | For ~333 mL agar portions |
+| Glass bottles or flasks (500 mL) | 12 | | For ~330 mL agar portions |
 
 ### Reusables
 
@@ -179,7 +179,7 @@ Add to agar cooled to ~50 C. Pour plates immediately -- MeOH evaporates at eleva
 
 #### Plates — 4×3 Factorial Design
 
-|  | **MeOH = 0** | **MeOH = 1 mM** | **MeOH = 10 mM** |
+|  | **MeOH = 0** | **MeOH = 1 mM** | **MeOH = 100 mM** |
 | :-- | :--: | :--: | :--: |
 | **La = 0** | 1 | 2 | 3 |
 | **La = 10 pM** | 4 | 5 | 6 |
@@ -199,7 +199,7 @@ Add to agar cooled to ~50 C. Pour plates immediately -- MeOH evaporates at eleva
 **Methanol:**
 - 0: heterotroph baseline (growth on L1 organic matter only)
 - 1 mM: low C1 supplement; selects for high-affinity methylotrophs
-- 10 mM: standard methylotroph enrichment concentration (Skovran et al. 2019)
+- 100 mM (0.4% v/v): standard methylotroph enrichment concentration (Skovran et al. 2019)
 
 ## Culture Conditions
 - **Temperature:** Match source water (15–20°C)
@@ -210,7 +210,7 @@ Add to agar cooled to ~50 C. Pour plates immediately -- MeOH evaporates at eleva
 
 Label on plate **BOTTOM**. Format: L1-La[conc]-M[conc]-R[rep]-D[dilution]  [date]
 
-Examples: L1-La0-M0-R1-Dneat  02/26/26 | L1-La10pM-M1mM-R2-D-2  02/26/26 | L1-La10uM-M10mM-R3-Dneat  02/26/26
+Examples: L1-La0-M0-R1-Dneat  02/26/26 | L1-La10pM-M1mM-R2-D-2  02/26/26 | L1-La10uM-M100mM-R3-Dneat  02/26/26
 
 ## Experimental Protocol
 
@@ -219,7 +219,7 @@ Examples: L1-La0-M0-R1-Dneat  02/26/26 | L1-La10pM-M1mM-R2-D-2  02/26/26 | L1-La
 #### Label Supplies
 - 72 petri dishes (see Labeling above)
 - 4 x 1 L bottles: "La=0", "La=10pM", "La=10nM", "La=10uM"
-- 12 x 500 mL bottles/flasks for ~333 mL portions (label with full condition)
+- 12 x 500 mL bottles/flasks for ~330 mL portions (label with full condition)
 
 #### Controls
 - **Positive:** L1 control plates with inoculum, no La or MeOH (standard heterotroph growth) = condition 1
@@ -237,15 +237,15 @@ Examples: L1-La0-M0-R1-Dneat  02/26/26 | L1-La10pM-M1mM-R2-D-2  02/26/26 | L1-La
 
 #### Step 2: Split and MeOH amendment (12 portions)
 
-1. For each 1 L La-amended bottle, pour ~333 mL into each of 3 pre-labeled 500 mL vessels.
+1. For each 1 L La-amended bottle, pour ~330 mL into each of 3 pre-labeled 500 mL vessels.
 1. Add MeOH per the MeOH addition table above. Record in Added column.
 1. Swirl to mix.
 
 #### Step 3: Pour plates
 
-**Pour in order:** MeOH=0 portions first (conditions 1,4,7,10), then MeOH=1mM (2,5,8,11), then MeOH=10mM (3,6,9,12). This prevents vapor cross-contamination.
+**Pour in order:** MeOH=0 portions first (conditions 1,4,7,10), then MeOH=1mM (2,5,8,11), then MeOH=100mM (3,6,9,12). This prevents vapor cross-contamination.
 
-1. Pour ~25 mL per plate (333 mL / 25 mL = ~13 plates per condition; need 6 per condition + spares).
+1. Pour ~25 mL per plate (330 mL / 25 mL = ~13 plates per condition; need 6 per condition + spares).
 1. Parafilm each plate immediately.
 1. Bag by condition.
 
